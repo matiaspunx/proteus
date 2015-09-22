@@ -1,0 +1,5 @@
+node_modules
+dist
+docs
+bower_components
+.tmp
