@@ -3,3 +3,4 @@ dist
 docs
 bower_components
 .tmp
+.DS_Store

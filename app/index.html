@@ -1,32 +1,40 @@
 <!doctype html>
-<!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
-  <!-- Place favicon.ico in the `app/` directory -->
+  <meta name="author" content="Matias Punx, GDG Buenos Aires">
+  <meta name="description" content="El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos">
+  <meta name="keywords" content="evento, gdg, gde, devfest, google, programación, android, chrome, polymer, developers, desarrolladores buenos aires, cloud">
+  <meta name="generator" content="GDGBsAs" />
+  <title>GDG Devfest Buenos Aires</title>
+  
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GDGBsas">
+  <meta name="twitter:title" content="GDG DevFest Buenos Aires 2015 &bull; 17 de Octubre, Buenos Aires">
+  <meta name="twitter:description" content="El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos">
+  <meta name="twitter:image:src" content="http://gdg.com.ar/devfest/images/seo/seo.jpg">
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:title" content="GDG DevFest Buenos Aires 2015 &bull; 17 de Octubre, Buenos Aires" />
+  <meta property="og:site_name" content="GDG DevFest Buenos Aires 2015 &bull; 17 de Octubre, Buenos Aires" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://gdg.com.ar/devfest" />
+  <meta property="og:image" content="http://gdg.com.ar/devfest/images/seo/seo.jpg" />
+  <meta property="og:description" content="El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos" />
+
 
   <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#2E3AA1">
+  <meta name="theme-color" content="#4DD0E2">
 
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
 
   <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-TileColor" content="#4DD0E2">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -63,118 +71,75 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
-    <paper-drawer-panel id="paperDrawerPanel">
+    <paper-drawer-panel id="paperDrawerPanel" force-narrow>
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
-
-        <!-- Drawer Toolbar -->
-        <paper-toolbar id="drawerToolbar">
-          <span class="paper-font-title">Menu</span>
-        </paper-toolbar>
-
-        <!-- Drawer Content -->
+        <!-- Menu off canvas -->
         <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
           <a data-route="home" href="/" on-click="onDataRouteClick">
             <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+            <span>Inicio</span>
           </a>
 
-          <a data-route="users" href="/users" on-click="onDataRouteClick">
+          <a data-route="speakers" href="/speakers" on-click="onDataRouteClick">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>Speakers</span>
+          </a>
+
+          <a data-route="agenda" href="/agenda" on-click="onDataRouteClick">
+            <iron-icon icon="calendar"></iron-icon>
+            <span>Agenda</span>
           </a>
 
           <a data-route="contact" href="/contact" on-click="onDataRouteClick">
             <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+            <span>Contacto</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
 
+
       <!-- Main Area -->
-      <paper-scroll-header-panel main condenses keep-condensed-header>
-
-        <!-- Main Toolbar -->
-        <paper-toolbar id="mainToolbar" class="tall">
-          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
-          <span class="flex"></span>
-
-          <!-- Toolbar icons -->
-          <paper-icon-button icon="refresh"></paper-icon-button>
-          <paper-icon-button icon="search"></paper-icon-button>
-
-          <!-- Application name -->
-          <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
-          </div>
-
-          <!-- Application sub title -->
-          <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">The future of the web today</div>
-          </div>
-
-        </paper-toolbar>
-
-        <!-- Main Content -->
+      <paper-scroll-header-panel main>
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
-              <paper-material elevation="1">
-                <my-greeting></my-greeting>
+              <hero-block class="section-shadow" hide-logo route="{{route}}">
+                <div class="top-section hero">
+                  <div class="layout vertical-horizontal">
+                    <div class="flex center-content center-content-xs">
+                      <img class="logo" src="images/header.svg" alt="GDG DevFest 2015. Logo by GDG Cherkasy (Ucrania)">
+                    </div>
+                    <div class="flex relative center-content right-section">
+                      <p class="main-title bold">GDG DevFest 2015</p>
+                      <p class="dates bold">17 de octubre, Buenos Aires</p>
+                      <p class="description">El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos</p>
+                      <div class="links layout horizontal align-pb-block">
+                        <a href="#pricetable"><paper-button class="colorful" raised>Registrate</paper-button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </hero-block>
 
-                <p class="paper-font-subhead">You now have:</p>
-                <my-list></my-list>
+              <statistics-block></statistics-block>
 
-                <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
-              </paper-material>
-              <paper-material elevation="1">
-                <p class="paper-font-body2">This is another card.</p>
-              </paper-material>
-
-              <paper-material elevation="1" class="paper-font-body2">
-                <h1 id="license">License</h1>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-              </paper-material>
-
+              <featured-people source="../../data/featured-speakers.json">
+                <h4 class="heading">Rockstar Speakers</h4>
+              </featured-people>
             </section>
 
             <section data-route="users">
-              <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a>
-              </paper-material>
+            2
             </section>
 
             <section data-route="user-info">
-              <paper-material elevation="1">
-                <h2 class="page-title">
-                User:<span>{{params.name}}</span>
-                </h2>
-                <div>This is <span>{{params.name}}</span>'s section</div>
-              </paper-material>
+            3
             </section>
 
             <section data-route="contact">
-              <paper-material elevation="1">
-                <h2 class="page-title">Contact</h2>
-                <p>This is the contact section</p>
-              </paper-material>
+            4
             </section>
 
           </iron-pages>
