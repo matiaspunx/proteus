@@ -80,21 +80,6 @@
             <iron-icon icon="home"></iron-icon>
             <span>Inicio</span>
           </a>
-
-          <a data-route="speakers" href="/speakers" on-click="onDataRouteClick">
-            <iron-icon icon="info"></iron-icon>
-            <span>Speakers</span>
-          </a>
-
-          <a data-route="agenda" href="/agenda" on-click="onDataRouteClick">
-            <iron-icon icon="calendar"></iron-icon>
-            <span>Agenda</span>
-          </a>
-
-          <a data-route="contact" href="/contact" on-click="onDataRouteClick">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contacto</span>
-          </a>
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -128,27 +113,18 @@
               <featured-people source="../../data/featured-speakers.json">
                 <h4 class="heading">Rockstar Speakers</h4>
               </featured-people>
-            </section>
 
-            <section data-route="users">
-            2
-            </section>
+              <social-feed source="http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=7200"></social-feed>
+              <map-block></map-block>
 
-            <section data-route="user-info">
-            3
             </section>
-
-            <section data-route="contact">
-            4
-            </section>
-
           </iron-pages>
         </div>
       </paper-scroll-header-panel>
     </paper-drawer-panel>
 
     <!-- Uncomment next block to enable Service Worker support (1/2) -->
-    <!--
+    
     <paper-toast id="caching-complete"
                  duration="6000"
                  text="Caching complete! This app will work offline.">
@@ -162,7 +138,7 @@
                          cache-config-file="cache-config.json">
       </platinum-sw-cache>
     </platinum-sw-register>
-    -->
+    
 
   </template>
 

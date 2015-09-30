@@ -41,7 +41,6 @@
                 margin-top: 5px;
                 padding: 0 16px;
                 line-height: .9;
-                color: var(--fucsia-claro)
             }
 
             .fe-people-company {
@@ -57,6 +56,11 @@
                 color: inherit;
                 font-size: .9em;
             }
+
+            paper-icon-button.paper-icon-button-0 {
+                color: var(--accent-color)
+            }
+
         </style>
         <iron-ajax auto url="[[source]]" handle-as="json" on-response="peopleLoaded"></iron-ajax>
         <div class="container text-center">
@@ -69,17 +73,24 @@
                             <span>[[person.name]]</span>
                         </h4>
 
-                        <span class="fe-people-google"><a href="[[person.google]]">G+</a></span>
-                        <span class="fe-people-twitter"><a href="[[person.twitter]]">TW</a></span>
+                        <!-- <span class="fe-people-google"><a href="[[person.google]]"><paper-icon-button icon="app-icons:glus"></paper-icon-button></a></span>
+                        <span class="fe-people-twitter"><a href="[[person.twitter]]"><paper-icon-button icon="app-icons:twitter"></paper-icon-button></a></span> -->
+
+                        <template is="dom-repeat" items="[[person.socials]]" as="social">
+                            <span class="fe-people-social"><a href="[[social.link]]" target="_blank">
+                                <paper-icon-button icon="[[social.name]]"></paper-icon-button>
+                            </a></span>
+                        </template>
+
                         <span class="fe-people-company">[[person.company]]</span>
                     </div>
                 </template>
             </div>
-            <div>
+            <!-- <div>
                 <a data-route="speakers" href="#!/speakers" class="block-link">
                     <paper-button>View all speakers</paper-button>
                 </a>
-            </div>
+            </div> -->
         </div>
     </template>
 </dom-module>

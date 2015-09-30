@@ -3,91 +3,137 @@
     "name": "Jonatan Ariste",
     "company": "Desarrollador y Diseñador UX",
     "photoUrl": "../../images/speakers/joni.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+JonatanAristeOjeda"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/jonatanariste"
+            }]
 }, {
     "id": 2,
     "name": "Juan Manuel Baiutti",
     "company": "Ingeniero, Project Manager",
     "photoUrl": "../../images/speakers/juanma.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+JuanmaBaiutti"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/juanmab"
+            }]
 }, {
     "id": 3,
     "name": "Jorge Cano",
     "company": "Developer free lance",
     "photoUrl": "../../images/speakers/jorge.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+JorgeCanojc"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/jorgeucano"
+            }]
 }, {
     "id": 4,
     "name": "Gustavo Cardelle",
     "company": "Consultor IT",
     "photoUrl": "../../images/speakers/gustavo.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+GustavoCardelle"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/gu5tavo71"
+            }]
 }, {
     "id": 5,
     "name": "Juan Irungaray",
     "company": "Emprendedor, desarrollador independiente",
     "photoUrl": "../../images/speakers/juan.jpg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+JuanIrungaray"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/jirungaray"
+            }]
 }, {
     "id": 6,
     "name": "Matias Punx",
     "company": "Frontend Developer Ninja",
     "photoUrl": "../../images/speakers/punx.jpg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+matiaspunx"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/antirockstars"
+            }]
 }, {
     "id": 7,
     "name": "Andrés Leonardo Martínez Ortiz",
     "company": "Developer Program Manager en Google (España)",
     "photoUrl": "../../images/speakers/ortiz.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/u/0/104070495650441591893"
+    }]
 }, {
     "id": 8,
     "name": "Nicolas Bortolotti",
     "company": "Developer Relation Program Manager South Region at Google",
     "photoUrl": "../../images/speakers/nick.jpg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "http://google.com/+NicolasBortolotti"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/nickbortolotti"
+            }]
 }, {
     "id": 9,
     "name": "Mariano Molina",
     "company": "Partner Business Solutions - Google Argentina",
     "photoUrl": "../../images/speakers/marianom.png",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/105681358343402624641"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/marianomolina_"
+            }]
 }, {
     "id": 10,
     "name": "Maria Evangelina Ferreira",
     "company": "Docente Diseño Web - Universidad Tecnológica Nacional",
     "photoUrl": "../../images/speakers/evan.jpeg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/101897391219305195274"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/evaferreira92"
+            }]
 }, {
     "id": 11,
     "name": "Lourdes Montano",
     "company": "Frontend developer",
     "photoUrl": "../../images/speakers/lourdes.jpg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/u/0/108462219757009920869/posts"
+        }, {
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/louMontano"
+            }]
 }, {
     "id": 12,
     "name": "Celina Twardowski",
     "company": "ActionScript Developer",
     "photoUrl": "../../images/speakers/celina.jpg",
-    "google": "http://google.com/+JuanmaBaiutti",
-    "twitter": "http://twitter.com/juanmab",
-    "twitterAlias": "@juanmab"
+    "socials": [{
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/celitwa"
+            }]
 }]
