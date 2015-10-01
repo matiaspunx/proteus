@@ -9,7 +9,7 @@
   <meta name="description" content="El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos">
   <meta name="keywords" content="evento, gdg, gde, devfest, google, programación, android, chrome, polymer, developers, desarrolladores buenos aires, cloud">
   <meta name="generator" content="GDGBsAs" />
-  <title>GDG Devfest Buenos Aires</title>
+  <title>GDG Devfest 2015, Buenos Aires</title>
   
   <!-- Social: Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -72,25 +72,14 @@
   <template is="dom-bind" id="app">
 
     <paper-drawer-panel id="paperDrawerPanel" force-narrow>
-      <!-- Drawer Scroll Header Panel -->
-      <paper-scroll-header-panel drawer fixed>
-        <!-- Menu off canvas -->
-        <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
-          <a data-route="home" href="/" on-click="onDataRouteClick">
-            <iron-icon icon="home"></iron-icon>
-            <span>Inicio</span>
-          </a>
-        </paper-menu>
-      </paper-scroll-header-panel>
-
-
       <!-- Main Area -->
-      <paper-scroll-header-panel main>
+      <div class="scroll" main>
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
-              <hero-block class="section-shadow" hide-logo route="{{route}}">
+
+              <hero-block class="section-shadow" route="{{route}}">
                 <div class="top-section hero">
                   <div class="layout vertical-horizontal">
                     <div class="flex center-content center-content-xs">
@@ -114,13 +103,19 @@
                 <h4 class="heading">Rockstar Speakers</h4>
               </featured-people>
 
+
               <social-feed source="http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=7200"></social-feed>
               <map-block></map-block>
 
+              <sponsors-block></sponsors-block>
+
+              <footer-block></footer-block>
+
             </section>
+
           </iron-pages>
         </div>
-      </paper-scroll-header-panel>
+      </div>
     </paper-drawer-panel>
 
     <!-- Uncomment next block to enable Service Worker support (1/2) -->
@@ -139,9 +134,9 @@
       </platinum-sw-cache>
     </platinum-sw-register>
     
-
+    <webfont-loader families="Roboto:100,400&subset=latin"></webfont-loader>
   </template>
-
+  <google-analytics code="UA-43643469-1"></google-analytics>
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->

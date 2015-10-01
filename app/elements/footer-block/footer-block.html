@@ -1,0 +1,200 @@
+<dom-module id="footer-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                background: #FCFCFC;
+                overflow: hidden;
+            }
+
+            .container {
+                padding: 16px;
+                font-size: 14px;
+            }
+
+            .container paper-button {
+                font-size: 0.9em;
+            }
+
+            .footer {
+                min-height: 200px;
+                color: #757575;
+            }
+
+            .gdg-logo {
+                margin-top: 10px;
+                height: 30px;
+                display: block;
+            }
+
+            a {
+                color: inherit !important;
+            }
+
+            .footer-backtotop {
+                margin-bottom: 20px;
+            }
+
+            .footer-content {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            .footer-links-container {
+                padding-top: 0;
+            }
+
+            .link-block {
+                margin-top: 0;
+                padding: 0;
+            }
+
+            .link-block li {
+                margin-bottom: 9px;
+                list-style-type: none;
+            }
+
+            .link-block-title {
+                margin-bottom: 10px;
+                font-size: 1.3em;
+                font-weight: 300;
+            }
+
+            .link-block a {
+                font-weight: 100;
+            }
+
+            .link-block a:hover {
+                text-decoration: underline;
+            }
+
+            .link-block-wrapper {
+                margin-bottom: 30px;
+            }
+
+            .icons-wrapper {
+                margin-top: -5px;
+            }
+
+            .gplus {
+                padding-top: 10px;
+            }
+
+            @media (min-width: 768px) {
+                nav {
+                    flex-direction: row !important;
+                    justify-content: flex-end !important;
+                    align-self: flex-end !important;
+                }
+                .container {
+                    padding: 0;
+                }
+                .footer-backtotop {
+                    margin-top: -10px;
+                    margin-bottom: 0;
+                }
+                .footer-content {
+                    padding: 32px 0;
+                    flex: 1;
+                }
+                .footer-links-container {
+                    padding-top: 0;
+                }
+                .footer-bottom {
+                    padding: 16px 0;
+                }
+                .link-block {
+                    padding: 0;
+                }
+                .link-block-title {
+                    margin-bottom: 15px;
+                }
+                .gdg-logo {
+                    margin-top: 0;
+                }
+                .gplus {
+                    padding: 0;
+                }
+            }
+        </style>
+        <div class="line full-width"></div>
+        <div class="container footer layout vertical">
+            <div class="footer-content layout horizontal justified">
+                <div class="flex gplus">
+                    <g:plusone size="medium" width="200" annotation="inline" href="http://www.gdg.com.ar"></g:plusone>
+                </div>
+                <paper-button class="footer-backtotop" on-tap="backToTop" noink>
+                    Ir arriba
+                    <iron-icon icon="icons:expand-less"></iron-icon>
+                </paper-button>
+            </div>
+            <div class="footer-content footer-links-container">
+                <nav class="layout vertical-horizontal flex">
+                    <div class="flex link-block-wrapper">
+                        <span class="link-block-title block">Pueden visitar</span>
+                        <ul class="link-block">
+                            <li><a href="https://developers.google.com/" target="_blank">Google Developers</a></li>
+                            <li><a href="http://gdg.com.ar/" target="_blank">GDG Buenos Aires</a></li>
+                            <li><a href="/code-of-conduct">Code of Conduct</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex link-block-wrapper">
+                        <span class="link-block-title block">Sponsors y medios</span>
+                        <ul class="link-block">
+                            <li><a href="#prop.pdf" target="_blank">Propuesta para Sponsors</a></li>
+                            <li><a href="#" target="_blank">Media Kit</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex link-block-wrapper">
+                        <span class="link-block-title block">Contacto</span>
+                        <ul class="link-block">
+                            <li><a href="mailto:devfest@gdg.com.ar">devfest@gdg.com.ar</a></li>
+                        </ul>
+                        <div class="icons-wrapper align-pb-block">
+                             <a href="https://plus.google.com/u/0/+gtugar/posts" target="_blank">
+                                <paper-icon-button icon="app-icons:glus"></paper-icon-button>
+                            </a>
+                            <a href="https://www.facebook.com/gdgbsas" target="_blank">
+                                <paper-icon-button icon="app-icons:facebook"></paper-icon-button>
+                            </a>
+                            <a href="https://twitter.com/gdgbsas" target="_blank">
+                                <paper-icon-button icon="app-icons:twitter"></paper-icon-button>
+                            </a>
+                            <a href="https://www.linkedin.com/company/google-developers-buenos-aires" target="_blank">
+                                <paper-icon-button icon="app-icons:linkedin"></paper-icon-button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="line full-width"></div> -->
+            <div class="footer-content footer-bottom layout vertical-horizontal justified">
+                <span class="flex self-center">
+                    &copy; GDG DevFest 2015, Buenos Aires <a href="https://github.com/matiaspunx/proteus" target="_blank">Sitio basado en Proteus for Polymer</a>. Diseño por <a href="http://gdg.com.ar/" target="_blank">GDG BsAs</a>. Logo por GDG Cherkasy (Ucrania).
+                </span>
+                <div class="self-end">
+                    
+                </div>
+            </div>
+        </div>
+    </template>
+</dom-module>
+<script>
+    (function() {
+        Polymer.NeonAnimatableBehavior = [Polymer.NeonAnimatableBehavior, Polymer.IronResizableBehavior];
+    })();
+    Polymer({
+        is: 'footer-block',
+        backToTop: function() {
+            app.scrollToTop();
+        }
+    });
+    (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>

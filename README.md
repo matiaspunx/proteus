@@ -1,4 +1,4 @@
-## Project Proteus - GDG DevFest Buenos Aires 2015
+## Project Proteus - GDG DevFest Buenos Aires 2015 (based on Polymer Starter Kit)
 
 > Template del DevFest con Polymer 1.0
 

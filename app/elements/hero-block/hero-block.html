@@ -90,6 +90,9 @@
                     @apply(--layout-center);
                     text-align: center;
                 }
+                ::content .hero {
+                    padding-bottom: 20px;
+                }
                 ::content .logo {
                     height: auto;
                 }
@@ -158,16 +161,6 @@
 
 <script>
     Polymer({
-        is: 'hero-block',
-        properties: {
-            hideLogo: Boolean,
-            route: {
-                type: String,
-                notify: true
-            }
-        },
-        togglePanel: function() {
-            document.querySelector('#paperDrawerPanel').togglePanel();
-        }
+        is: 'hero-block'
     });
 </script>
