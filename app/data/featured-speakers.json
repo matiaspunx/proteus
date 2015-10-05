@@ -136,4 +136,13 @@
             "name": "app-icons:twitter",
             "link": "http://twitter.com/celitwa"
             }]
+}, {
+    "id": 13,
+    "name": "Martin Rabaglia",
+    "company": "Developer",
+    "photoUrl": "../../images/speakers/rabaglia.jpg",
+    "socials": [{
+            "name": "app-icons:twitter",
+            "link": "http://twitter.com/tincho_for_ever"
+            }]
 }]

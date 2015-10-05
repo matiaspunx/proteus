@@ -1,0 +1,75 @@
+<dom-module id="venue-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                color: var(--social-font-color);
+            }
+
+            a {
+                color: var(--social-font-color);
+            }
+
+            .img-cover {
+                width: 100%;
+                height: 406px
+            }
+
+            .container {
+                padding: 0;
+                height: 400px;
+                max-width: 100%;
+            }
+            .container-alt {
+                height: auto;
+                padding: 80px 0 30px;
+            }
+            .content {
+                padding: 20px;
+                background: var(--light-primary-color);
+                height: 400px;
+            }
+            .content-center {
+                text-align: center;
+            }
+            @media (max-width: 767px) {
+                .img-cover {
+                width: 100%;
+                height: 206px
+            }
+                .container-alt {
+                    height: auto;
+                    padding: 30px 0 10px;
+                }
+                .content .heading {
+                    font-size: 18px;
+                }
+                .content p {
+                    font-size: 14px;
+                }
+            }
+        </style>
+        <div class="container container-alt text-center">
+            <h4 class="heading">Venue</h4>
+        </div>
+        <div class="container relative layout vertical-horizontal">
+            <div class="flex content-center">
+                <iron-image class="flex img-cover" src="../../images/venue/up.jpg" sizing="cover"></iron-image>   
+            </div>
+            <div class="flex">
+                <div class="content">
+                    <h4 class="heading">Universidad de Palermo</h4>
+                    <p><strong>Sede Mario Bravo</strong></p>
+                    <p>Mario Bravo 1050, Buenos Aires, Argentina</p>
+                    <p>Facultad de Diseño y Comunicación, Facultad de Derecho, Facultad de Ingeniería</p>
+                </div>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'venue-block'
+    });
+</script>

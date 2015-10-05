@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 (function(document) {
     'use strict';
 
@@ -13,8 +14,8 @@
     // Listen for template bound event to know when bindings
     // have resolved and content has been stamped to the page
     app.addEventListener('dom-change', function() {
-        console && console.log("%cHey, amigos!\n%cEsto es GDG DevFest 2015 Buenos aires!",
-                       "font-size:1.5em;color:#4558c9;", "color:#d61a7f;font-size:1em;");
+        console && console.log('%cHey, amigos!\n%cEsto es GDG DevFest 2015 Buenos aires!',
+                       'font-size:1.5em;color:#4558c9;', 'color:#d61a7f;font-size:1em;');
     });
 
     // See https://github.com/Polymer/polymer/issues/1381
@@ -37,7 +38,6 @@
             }
         }
     };
-    /* jshint ignore:end */
 
     // Scroll page to top and expand header
     app.scrollPageToTop = function() {
@@ -103,3 +103,4 @@
     }
 
 })(document);
+/* jshint ignore:end */

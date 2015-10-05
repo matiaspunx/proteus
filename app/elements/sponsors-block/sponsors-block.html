@@ -4,12 +4,55 @@
             :host {
                 display: block;
             }
+            ::content .container .container {
+                padding: 10px 0;
+            }
+            ::content iron-image {
+                width: 350px;
+                height: 150px;
+            }
+            @media (max-width: 767px) {
+                ::content iron-image {
+                    width: 250px;
+                    height: 100px;
+                }
+            }
         </style>
         <div class="container text-center">
             <h4 class="heading">Organizador</h4>
             <div class="container relative layout vertical center">
-                <a class="logo-item" href="http://www.gdg.com.ar" title="GDG Buenos Aires" target="_blank">
-                    <iron-image class="logo-img flex" src="../../images/sponsors/gdg-limpio.png" sizing="contain"></iron-image>
+                <a href="http://www.gdg.com.ar" title="GDG Buenos Aires" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/gdg-limpio.png" sizing="contain"></iron-image>
+                </a>
+                <a href="http://www.gdg.com.ar" title="GDG Buenos Aires" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/wtm.png" sizing="contain"></iron-image>
+                </a>
+            </div>
+
+            <br><br>
+
+            <h4 class="heading">Sponsor General</h4>
+            <div class="container relative layout vertical center">
+                <a href="https://developers.google.com/" title="Google Developers" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/google_dev.png" sizing="contain"></iron-image>
+                </a>
+            </div>
+
+            <br><br>
+
+            <h4 class="heading">Sponsors</h4>
+            <div class="container relative layout vertical center">
+                <a href="https://escueladevrock.com/" title="Escuela Dev Rock!" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/escuela-dev-rock.png" sizing="contain"></iron-image>
+                </a>
+            </div>
+
+            <br><br>
+
+            <h4 class="heading">Venue</h4>
+            <div class="container relative layout vertical center">
+                <a href="http://www.palermo.edu/" title="Universidad de Palermo" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/up.jpg" sizing="contain"></iron-image>
                 </a>
             </div>
         </div>
