@@ -25,7 +25,7 @@
 }, {
     "id": 3,
     "name": "Jorge Cano",
-    "company": "Developer free lance",
+    "company": "Full Stack Developer JS",
     "photoUrl": "../../images/speakers/jorge.png",
     "socials": [{
         "name": "app-icons:glus",
