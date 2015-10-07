@@ -3,78 +3,149 @@
     "name": "Jonatan Ariste",
     "company": "Desarrollador y Diseñador UX",
     "photoUrl": "../../images/speakers/joni.png",
+    "bio": "Jonatan hace muchas cosas, es desarrollador, diseñador, profesor en <a href='http://escueladevrock.com'>Escuela Dev Rock</a>, owner <a href='http://beyonddcode.com'>beyonddcode.com</a>, streamer de #MACLive y manager del GDG Buenos Aires por decir solo algunas",
+    "tags": ["UX/UI", "HTML5"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JonatanAristeOjeda"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/jonatanariste"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/jonatanariste"
+    }],
+    "charla": [{
+        "id": 101,
+        "title": "UX para humanos",
+        "description": "Ble ble ble",
+        "speakers": [1],
+        "language": "es",
+        "complexity": "Principiantes",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 2,
     "name": "Juan Manuel Baiutti",
     "company": "Ingeniero, Project Manager",
     "photoUrl": "../../images/speakers/juanma.png",
+    "bio": "Juan Manuel es Ingeniero en informática. Es uno de los managers de GDG Buenos Aires. Trabajó como desarrollador, principalmente en tecnologías mobile antes de pasar a tomar el rol de project manager.",
+    "tags": ["GDG", "Project Manager"],
+    "height": "position: relative; min-height: 500px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JuanmaBaiutti"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/juanmab"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/juanmab"
+    }],
+    "charla": [{
+        "id": 102,
+        "title": "DevFest 2015 Keynote",
+        "description": "",
+        "speakers": [2],
+        "language": "es",
+        "complexity": "",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 3,
     "name": "Jorge Cano",
     "company": "Full Stack Developer JS",
     "photoUrl": "../../images/speakers/jorge.png",
+    "bio": "Jorge es un Tecnologo amante del desarrollo. Arquitecto de sistemas, owner en wsoft, docente y manager Del Google Developer Group Argentina. Profesor del curso FullStack",
+    "tags": ["Angular", "DART"],
+    "height": "position: relative; min-height: 1200px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JorgeCanojc"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/jorgeucano"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/jorgeucano"
+    }],
+    "charla": [{
+        "id": 103,
+        "title": "Angular 2",
+        "description": "Ble ble ble",
+        "speakers": [3],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 4,
     "name": "Gustavo Cardelle",
     "company": "Consultor IT",
     "photoUrl": "../../images/speakers/gustavo.png",
+    "bio": "Consultor en desarrollos de proyectos IT, ND&I (Network Designer & Installer), autor, y Manager de GDG Buenos Aires",
+    "tags": ["Server", "Gestion"],
+    "height": "position: relative; min-height: 1200px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+GustavoCardelle"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/gu5tavo71"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/gu5tavo71"
+    }]
 }, {
     "id": 5,
     "name": "Juan Irungaray",
     "company": "Emprendedor, desarrollador independiente",
     "photoUrl": "../../images/speakers/juan.jpg",
+    "bio": "Fundador del GTUG (GDG) Buenos Aires y especialista en desarrollo de productos móviles y cloud. Scrum Master y promotor de las metodologías ágiles.",
+    "tags": ["Server", "Gestion"],
+    "height": "position: relative; min-height: 1200px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JuanIrungaray"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/jirungaray"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/jirungaray"
+    }],
+    "charla": [{
+        "id": 104,
+        "title": "Cloud",
+        "description": "Ble ble ble",
+        "speakers": [5],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 6,
     "name": "Matias Punx",
     "company": "Frontend Developer Ninja",
     "photoUrl": "../../images/speakers/punx.jpg",
+    "bio": "Matias es Frontend Developer, Mentor en Programá tu Futuro y Manager del Google Developer Group Argentina.",
+    "tags": ["Polymer", "JS"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+matiaspunx"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/antirockstars"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/antirockstars"
+    }],
+    "charla": [{
+        "id": 105,
+        "title": "Polymer Code Lab",
+        "description": "En este Code Lab vamos a aprender a armar nuestro primer Web Component.<br><strong>Si queres participar del taller es necesario contar con una laptop</strong>.",
+        "speakers": [6],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 7,
     "name": "Andrés Leonardo Martínez Ortiz",
     "company": "Developer Program Manager en Google (España)",
     "photoUrl": "../../images/speakers/ortiz.png",
+    "bio": "Andres",
+    "tags": ["Google", "GDG"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/u/0/104070495650441591893"
@@ -82,67 +153,189 @@
 }, {
     "id": 8,
     "name": "Nicolas Bortolotti",
-    "company": "Developer Relation Program Manager South Region at Google",
+    "company": "Director de Relaciones para Desarrolladores Google",
     "photoUrl": "../../images/speakers/nick.jpg",
+    "bio": "Nicolás ha desarrollado comunidades académicas y de investigación en varios países de Latinoamérica en la plataforma de desarrollo de Google, Web y Mobile. Nicolás ha participado académicamente como profesor de la Universidad Tecnológica Nacional (UTN), para las cátedras Ingeniería de Software Orientada a Objetos y Arquitecturas Móviles",
+    "tags": ["Google", "Polymer", "Mobile"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+NicolasBortolotti"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/nickbortolotti"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/nickbortolotti"
+    }],
+    "charla": [{
+        "id": 106,
+        "title": "Web",
+        "description": "123, probando",
+        "speakers": [8],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 9,
     "name": "Mariano Molina",
     "company": "Partner Business Solutions - Google Argentina",
     "photoUrl": "../../images/speakers/marianom.png",
+    "bio": "",
+    "tags": ["Google", "Admob"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/105681358343402624641"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/marianomolina_"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/marianomolina_"
+    }],
+    "charla": [{
+        "id": 107,
+        "title": "????",
+        "description": "????",
+        "speakers": [9],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 10,
     "name": "Maria Evangelina Ferreira",
     "company": "Docente Diseño Web - Universidad Tecnológica Nacional",
     "photoUrl": "../../images/speakers/evan.jpeg",
+    "bio": "I Code & Teach HTML, CSS, SVG and JavaScript. Ocassional Translator. Proud Slytherin. Average.",
+    "tags": ["CSS", "HTML", "SASS", "SVG", "Javascript"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/101897391219305195274"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/evaferreira92"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/evaferreira92"
+    }],
+    "charla": [{
+        "id": 108,
+        "title": "Newton y CSS",
+        "description": "Las animaciones realistas tienen una pizca de física. En esta charla vamos a hablar un poco de Newton y mucho de timing-functions!",
+        "speakers": [10],
+        "language": "es",
+        "complexity": "Principiantes",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 11,
     "name": "Lourdes Montano",
     "company": "Frontend developer",
     "photoUrl": "../../images/speakers/lourdes.jpg",
+    "bio": "Front-end developer. CSS lover. Climbing & surfing when not connected. Weird laughter.",
+    "tags": ["CSS", "HTML5", "SASS", "Javascript"],
+    "height": "position: relative; min-height: 890px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/u/0/108462219757009920869/posts"
-        }, {
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/louMontano"
-            }]
+    }, {
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/louMontano"
+    }],
+    "charla": [{
+        "id": 109,
+        "title": "Sass Maps",
+        "description": "Al trabajar en proyectos grandes la arquitectura del código es muy importante para mantener todo bajo control. CSS no es la excepción.<br>A la hora de empezar a trabajar con nuestros archivos CSS, es escencial contar con una estructura que nos sirva a lo largo de todo el sitio. Esta charla es acerca del proceso de aprendizaje que tuve utilizando Sass Maps, una herramienta muy útil que me ayudó a organizar mi código y estructura para facilitar su mantenimiento.<br><br>Outline:<br>- Breve introducción a Sass Maps<br>- Diferentes usos de Maps<br>- Cómo crear estilos dinámicos<br>- Aplicación a grandes proyectos y equipos de trabajo",
+        "speakers": [11],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 12,
     "name": "Celina Twardowski",
     "company": "ActionScript Developer",
     "photoUrl": "../../images/speakers/celina.jpg",
+    "bio": "Bio Celina",
+    "tags": ["ActionScript", "HTML5", "Javascript"],
+    "height": "position: relative; min-height: 700px",
     "socials": [{
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/celitwa"
-            }]
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/celitwa"
+    }],
+    "charla": [{
+        "id": 110,
+        "title": "Lo que el Flash nos dejó",
+        "description": "Flash una vez fue nuestra mejor herramienta para jugar con gráficos y movimiento en la web, hasta que a Steve Jobs se le ocurrió que teniamos que empezar de nuevo",
+        "speakers": [12],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }, {
     "id": 13,
     "name": "Martin Rabaglia",
     "company": "Developer",
     "photoUrl": "../../images/speakers/rabaglia.jpg",
+    "bio": "",
+    "tags": ["VR", "IOT"],
+    "height": "position: relative; min-height: 400px",
     "socials": [{
-            "name": "app-icons:twitter",
-            "link": "http://twitter.com/tincho_for_ever"
-            }]
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/tincho_for_ever"
+    }],
+    "charla": [{
+        "id": 111,
+        "title": "???",
+        "description": "???",
+        "speakers": [13],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 14,
+    "name": "Matias Molina",
+    "company": "Google Developer Expert",
+    "photoUrl": "../../images/speakers/molina.jpg",
+    "bio": "",
+    "tags": ["Google"],
+    "height": "position: relative; min-height: 400px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://www.google.com/+MatiasMolinas"
+    }],
+    "charla": [{
+        "id": 112,
+        "title": "???",
+        "description": "???",
+        "speakers": [14],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 15,
+    "name": "Francisco Solsona",
+    "company": "Developer Platform NoLA Lead, Google - Mexico City",
+    "photoUrl": "../../images/speakers/paco.png",
+    "bio": "",
+    "tags": ["Google", "Platform"],
+    "height": "position: relative; min-height: 400px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://www.google.com/+solsona"
+    }],
+    "charla": [{
+        "id": 113,
+        "title": "???",
+        "description": "???",
+        "speakers": [15],
+        "language": "es",
+        "complexity": "Intermedio",
+        "presentation": "",
+        "video": ""
+    }]
 }]

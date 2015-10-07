@@ -53,6 +53,11 @@
         }
     };
 
+    app.scrollPageToSpeakers = function() {
+      var item = document.getElementById('scrollPersonas');
+      app.smoothScroll(item, 1000);
+    };
+
     app.generateClass = function(value) {
         return value.replace(/\s+/g, '-').toLowerCase();
     };

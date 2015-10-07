@@ -1,8 +1,13 @@
+<link rel="import" href="../person-dialog/person-dialog.html">
 <dom-module id="featured-people">
     <template>
         <style>
             :host {
                 display: block;
+            }
+
+            .person-wrapper {
+                display: none;
             }
 
             .container {
@@ -61,30 +66,41 @@
                 color: var(--accent-color)
             }
 
+            #headingSing {
+                display: none;
+            }
+            .container-alt {
+                padding-bottom: 0;
+            }
+            .container-sub {
+                padding-top: 10px;
+            }
+
         </style>
-        <iron-ajax auto url="[[source]]" handle-as="json" on-response="peopleLoaded"></iron-ajax>
-        <div class="container text-center">
-            <content></content>
+        <iron-ajax auto url="[[source]]" handle-as="json" on-response="peopleLoaded" last-response="{{peopleTemp}}"></iron-ajax>
+        <div class="container container-alt text-center">
+            <h4 class="heading" id="headingPlur">Rockstar Speakers</h4>
+            <h4 class="heading" id="headingSing">Rockstar Speaker</h4>
+        </div>
+        <div id="people" class="container container-sub text-center">
             <div class="flex wrap layout horizontal people-wraper">
-                <template is="dom-repeat" items="[[people)]" as="person">
-                    <div class="fe-people">
-                        <iron-image src="[[person.photoUrl]]" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
-                        <h4 class="fe-people-name">
-                            <span>[[person.name]]</span>
-                        </h4>
 
-                        <!-- <span class="fe-people-google"><a href="[[person.google]]"><paper-icon-button icon="app-icons:glus"></paper-icon-button></a></span>
-                        <span class="fe-people-twitter"><a href="[[person.twitter]]"><paper-icon-button icon="app-icons:twitter"></paper-icon-button></a></span> -->
+                    <template is="dom-repeat" items="[[people)]" as="person">
+                        <div class="fe-people" on-tap="readMore">
+                            <iron-image src="[[person.photoUrl]]" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                            <h4 class="fe-people-name">
+                                <span>[[person.name]]</span>
+                            </h4>
 
-                        <template is="dom-repeat" items="[[person.socials]]" as="social">
-                            <span class="fe-people-social"><a href="[[social.link]]" target="_blank">
-                                <paper-icon-button icon="[[social.name]]"></paper-icon-button>
-                            </a></span>
-                        </template>
+                            <template is="dom-repeat" items="[[person.socials]]" as="social">
+                                <span class="fe-people-social"><a href="[[social.link]]" target="_blank">
+                                    <paper-icon-button icon="[[social.name]]"></paper-icon-button>
+                                </a></span>
+                            </template>
 
-                        <span class="fe-people-company">[[person.company]]</span>
-                    </div>
-                </template>
+                            <span class="fe-people-company">[[person.company]]</span>
+                        </div>
+                    </template>
             </div>
             <!-- <div>
                 <a data-route="speakers" href="#!/speakers" class="block-link">
@@ -92,14 +108,70 @@
                 </a>
             </div> -->
         </div>
+        <div id="personCon" class="person-wrapper container">
+            <person-dialog id="person" class="person flex" person="{{selectedPerson}}" opened="{{opened}}"></person-dialog>
+        </div>
     </template>
 </dom-module>
 
 <script>
     Polymer({
         is: 'featured-people',
+        behaviors: [
+            Polymer.NeonAnimatableBehavior,
+            Polymer.NeonAnimationRunnerBehavior
+        ],
         properties: {
-            source: String
+            source: String,
+            tags: Array,
+            badges: Array,
+            opened: {
+                type: Boolean,
+                observer: '_openedChanged'
+            },
+            animationConfig: {
+                value: function() {
+                    return {
+                        'loadPeople': {
+                            name: 'cascaded-animation',
+                            animation: 'transform-animation',
+                            transformFrom: 'translateY(100%)',
+                            transformTo: 'none',
+                            nodedelay: 250,
+                            timing: {
+                                duration: 1500
+                            }
+                        },
+                        'unloadPeople': {
+                            name: 'fade-out-animation',
+                            node: this.$.people,
+                            timing: {
+                                duration: 200
+                            }
+                        },
+                        'openPerson': {
+                            name: 'scale-up-animation',
+                            node: this.$.person,
+                            timing: {
+                                duration: 500
+                            }
+                        },
+                        'closePerson': {
+                            name: 'fade-out-animation',
+                            node: this.$.person,
+                            timing: {
+                                duration: 500
+                            }
+                        }
+                    };
+                }
+            }
+        },
+        observers: [
+            'peopleLoaded(event, response)'
+        ],
+        listeners: {
+            'neon-animation-finish': '_onNeonAnimationFinish'
         },
         peopleLoaded: function(event, response) {
             this.people = this.randomOrder(response.response).slice(0, 20);
@@ -108,6 +180,57 @@
             return array.sort(function() {
                 return 0.5 - Math.random();
             });
+        },
+        checkUrlParams: function() {
+            if (app.params && app.params.id) {
+                var person = app.findByPropertyValue(this.people, 'id', app.params.id);
+                if (person !== undefined && person !== null) {
+                    this.openPerson(person);
+                    return true;
+                }
+            }
+        },
+        readMore: function(event) {
+            page.redirect('/speakers/' + event.model.person.id);
+            this.openPerson(event.model.person);
+        },
+        openPerson: function(person) {
+            this.opened = true;
+            this.selectedPerson = person;
+            this.$.personCon.style.display = 'block';
+            this.$.headingPlur.style.display = 'none';
+            this.$.headingSing.style.display = 'block';
+            this.cancelAnimation();
+            this.playAnimation('openPerson');
+            if (screen.width > 768) {
+                this.playAnimation('unloadPeople');
+            }
+        },
+        closePerson: function() {
+            page('/speakers');
+            this.opened = false;
+            this.$.headingPlur.style.display = 'block';
+            this.$.headingSing.style.display = 'none';
+            this.cancelAnimation();
+            this.playAnimation('closePerson');
+        },
+        _onNeonAnimationFinish: function() {
+            if (this.opened && screen.width > 768) {
+                this.$.people.style.display = 'none';
+                this.$.people.style.position = 'absolute';
+            }
+            if (!this.opened) {
+                this.$.personCon.style.display = 'none';
+                if (screen.width > 768) {
+                    this.$.people.style.display = 'flex';
+                    this.$.people.style.position = 'relative';
+                }
+            }
+        },
+        _openedChanged: function() {
+            if (!this.opened) {
+                this.closePerson();
+            }
         }
     });
 </script>

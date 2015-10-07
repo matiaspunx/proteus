@@ -76,7 +76,6 @@
       <div class="scroll" main>
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
-
             <section data-route="home">
 
               <hero-block class="section-shadow" route="{{route}}">
@@ -96,27 +95,23 @@
                   </div>
                 </div>
               </hero-block>
-
+              
               <statistics-block></statistics-block>
 
-              <featured-people source="../../data/featured-speakers.json">
-                <h4 class="heading">Rockstar Speakers</h4>
-              </featured-people>
+              <div id="scrollPersonas"></div>
+              <featured-people source="../../data/featured-speakers.json"></featured-people>
 
+              <social-feed></social-feed>
 
-              <social-feed source="http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=7200"></social-feed>
               <venue-block></venue-block>
+
               <map-block></map-block>
 
-              <sponsors-block>
-                
-                
-              </sponsors-block>
+              <sponsors-block></sponsors-block>
 
               <footer-block></footer-block>
 
             </section>
-
           </iron-pages>
         </div>
       </div>

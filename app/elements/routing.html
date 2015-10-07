@@ -17,9 +17,20 @@
       app.scrollToTop();
     });
 
-    page('/', function () {
-      app.route = 'inicio';
-      app.scrollToTop();
+    page('/speakers', function() {
+      trackPageview('/speakers');
+      app.route = 'home';
+    });
+
+    page('/speakers/:id', function(data) {
+      trackPageview('/speakers/' + data.params.id);
+      app.route = 'home';
+      app.params = data.params;
+      app.scrollPageToSpeakers();
+    });
+
+    page.exit('/speakers/:id', function() {
+      //document.querySelector('#featured-people').closePerson();
     });
 
     // add #! before urls
