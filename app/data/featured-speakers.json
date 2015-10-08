@@ -338,4 +338,26 @@
         "presentation": "",
         "video": ""
     }]
+}, {
+    "id": 16,
+    "name": "Melanie Sclar",
+    "company": "Programadora - UBA",
+    "photoUrl": "../../images/speakers/melanie.jpg",
+    "bio": "Alumna de la Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales. Melanie fue una de las participantes del Mundial de programación donde salieron en el puesto numero 18 por encima de Hardvard.",
+    "tags": ["Programación", "UBA"],
+    "height": "position: relative; min-height: 800px",
+    "socials": [{
+        "name": "app-icons:twitter",
+        "link": "http://twitter.com/melaniesclar"
+    }],
+    "charla": [{
+        "id": 114,
+        "title": "Programación de competencia",
+        "description": "Las competencias de programación son certámenes donde se pone a prueba la capacidad de resolver problemas utilizando algoritmos conocidos combinándolos con la creatividad propia de aplicarlos a cada problema planteado, así como la capacidad de programarlos en el menor tiempo posible.<br>Tanto en sus versiones por equipos e individuales, estas competencias están en constante crecimiento hace varios años y las habilidades que entrenan son muy requeridas. Varias empresas ya tienen sus propias competencias, entre las que se destacan la <strong>Google Codejam</strong> y la Facebook HackerCup, que se suman a la competencia más prestigiosa del área: la ICPC (International Collegiate Programming Contest), organizada por la ACM (Association of Computing Machinery).<br>Por su naturaleza competitiva, estos certámenes tienen varias particularidades que los diferencian de los demás ámbitos de la programación, y hacen que requieran un entrenamiento específico. En esta charla ahondaremos en este fascinante mundo de las competencias de programación, y cómo llegamos a ser campeones lationamericanos en la última edición de la ACM-ICPC.",
+        "speakers": [15],
+        "language": "es",
+        "complexity": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
 }]
