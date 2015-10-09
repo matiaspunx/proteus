@@ -1,6 +1,5 @@
 <dom-module id="person-dialog">
     <template>
-        <style include="tags-color"></style>
         <style>
             :host {
                 display: block;
@@ -68,6 +67,11 @@
 
             .tag {
                 margin-left: 5px;
+                background: #f4f4f4;
+                font-size: 13px;
+                border-radius: 3px;
+                padding: 3px; 
+                display: inline-block;
             }
 
             .session {
@@ -101,6 +105,7 @@
                 }
                 .name {
                     font-size: 22px;
+                    font-weight: 700;
                     color: var(--default-primary-color);
                 }
                 .title {
@@ -128,9 +133,9 @@
                         </div>
                     </div>
                     <div class="card-content person-tags">
-                        <span class="tags-label">Tags:</span>
+                        <span class="tags-label">Aptitudes:</span>
                         <template is="dom-repeat" items="[[person.tags]]" as="tag">
-                            <span class$="[[tag.tagClass]]">[[tag]]</span>, 
+                            <span class="tag">[[tag]]</span> 
                         </template>
                     </div>
 
@@ -142,11 +147,11 @@
                         <template is="dom-repeat" items="[[person.charla]]" as="session">
                             <div class="session">
                                 <h3 class="session-title">[[session.title]]</h3>
-                                <span class="session-meta">Idioma:
+                                <!-- <span class="session-meta">Idioma:
                                     <span>[[session.language]]</span>
-                                </span>
-                                <span class="session-meta">Complejidad:
-                                    <span>[[session.complexity]]</span>
+                                </span> -->
+                                <span class="session-meta">Track:
+                                    <span>[[session.track]]</span>
                                 </span>
                                 <marked-element markdown="[[session.description]]"></marked-element>
                             </div>
@@ -175,9 +180,9 @@
                     <span>[[person.company]]</span>
                 </div>
                 <div class="card-content person-tags">
-                    <span class="tags-label">Tags:</span>
+                    <span class="tags-label">Aptitudes:</span>
                     <template is="dom-repeat" items="[[person.tags]]" as="tag">
-                        <span class$="[[tag.tagClass]]">[[tag]]</span>
+                        <span class="tag">[[tag]]</span>
                     </template>
                 </div>
 
@@ -189,11 +194,11 @@
                     <template is="dom-repeat" items="[[person.charla]]" as="session">
                         <div class="session">
                             <h3 class="session-title">[[session.title]]</h3>
-                            <span class="session-meta">Idioma:
+                            <!-- <span class="session-meta">Idioma:
                                 <span>[[session.language]]</span>
-                            </span>
-                            <span class="session-meta">Complejidad:
-                                <span>[[session.complexity]]</span>
+                            </span> -->
+                            <span class="session-meta">Track:
+                                <span>[[session.track]]</span>
                             </span>
                             <marked-element markdown="[[session.description]]"></marked-element>
                         </div>

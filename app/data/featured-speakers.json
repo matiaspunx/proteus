@@ -4,7 +4,7 @@
     "company": "Desarrollador y Diseñador UX",
     "photoUrl": "../../images/speakers/joni.png",
     "bio": "Jonatan hace muchas cosas, es desarrollador, diseñador, profesor en <a href='http://escueladevrock.com'>Escuela Dev Rock</a>, owner <a href='http://beyonddcode.com'>beyonddcode.com</a>, streamer de #MACLive y manager del GDG Buenos Aires por decir solo algunas",
-    "tags": ["UX/UI", "HTML5"],
+    "tags": ["UX/UI", "HTML5", "CSS", "JavaScript"],
     "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
@@ -15,11 +15,11 @@
     }],
     "charla": [{
         "id": 101,
-        "title": "UX para humanos",
-        "description": "Ble ble ble",
+        "title": "",
+        "description": "",
         "speakers": [1],
         "language": "es",
-        "complexity": "Principiantes",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
@@ -30,7 +30,7 @@
     "photoUrl": "../../images/speakers/juanma.png",
     "bio": "Juan Manuel es Ingeniero en informática. Es uno de los managers de GDG Buenos Aires. Trabajó como desarrollador, principalmente en tecnologías mobile antes de pasar a tomar el rol de project manager.",
     "tags": ["GDG", "Project Manager"],
-    "height": "position: relative; min-height: 500px",
+    "height": "position: relative; min-height: 660px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JuanmaBaiutti"
@@ -41,21 +41,21 @@
     "charla": [{
         "id": 102,
         "title": "DevFest 2015 Keynote",
-        "description": "",
+        "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
         "speakers": [2],
         "language": "es",
-        "complexity": "",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
     "id": 3,
     "name": "Jorge Cano",
-    "company": "Full Stack Developer JS",
+    "company": "Full stack developer",
     "photoUrl": "../../images/speakers/jorge.png",
-    "bio": "Jorge es un Tecnologo amante del desarrollo. Arquitecto de sistemas, owner en wsoft, docente y manager Del Google Developer Group Argentina. Profesor del curso FullStack",
-    "tags": ["Angular", "DART"],
-    "height": "position: relative; min-height: 1200px",
+    "bio": "Jorge es tecnologo amante del desarrollo. Arquitecto de sistemas, full stack developer js, owner en Wsoft, docente, co-founder de <a href='http://escueladevrock.com'>Escuela Dev Rock</a> y Manager de GDG Buenos Aires",
+    "tags": ["Angular", "JavaScript", "DART"],
+    "height": "position: relative; min-height: 920px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+JorgeCanojc"
@@ -65,11 +65,11 @@
     }],
     "charla": [{
         "id": 103,
-        "title": "Angular 2",
-        "description": "Ble ble ble",
+        "title": "Google full stack developer",
+        "description": "No es una novedad ver en algunas ofertas de trabajo para desarrolladores y perfiles técnicos el requisito de ser un 'full-stack developer', pero ¿realmente conocemos qué están pidiendo al demandar ese perfil?<br>Gracias a Google y sus tecnologías JS veremos como iniciando con un servidor podemos abarcar todos los ámbitos dentro del desarrollo, devops backend middleware frontend y app.",
         "speakers": [3],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
@@ -79,37 +79,47 @@
     "company": "Consultor IT",
     "photoUrl": "../../images/speakers/gustavo.png",
     "bio": "Consultor en desarrollos de proyectos IT, ND&I (Network Designer & Installer), autor, y Manager de GDG Buenos Aires",
-    "tags": ["Server", "Gestion"],
-    "height": "position: relative; min-height: 1200px",
+    "tags": ["Administración de sistemas", "Gestión", "Social Media"],
+    "height": "position: relative; min-height: 620px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+GustavoCardelle"
     }, {
         "name": "app-icons:twitter",
         "link": "http://twitter.com/gu5tavo71"
+    }],
+    "charla": [{
+        "id": 1031,
+        "title": "DevFest 2015 Keynote",
+        "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
+        "speakers": [4],
+        "language": "es",
+        "track": "GDG",
+        "presentation": "",
+        "video": ""
     }]
 }, {
     "id": 5,
     "name": "Juan Irungaray",
     "company": "Emprendedor, desarrollador independiente",
     "photoUrl": "../../images/speakers/juan.jpg",
-    "bio": "Fundador del GTUG (GDG) Buenos Aires y especialista en desarrollo de productos móviles y cloud. Scrum Master y promotor de las metodologías ágiles.",
-    "tags": ["Server", "Gestion"],
-    "height": "position: relative; min-height: 1200px",
+    "bio": "Fundador del GDG Buenos Aires y especialista en desarrollo de productos móviles y cloud. Scrum Master y promotor de las metodologías ágiles.",
+    "tags": ["Desarrollo", "Cloud", "Scrum", "Agiles"],
+    "height": "position: relative; min-height: 560px",
     "socials": [{
-        "name": "app-icons:glus",
-        "link": "http://google.com/+JuanIrungaray"
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/in/juanirungaray"
     }, {
         "name": "app-icons:twitter",
         "link": "http://twitter.com/jirungaray"
     }],
     "charla": [{
         "id": 104,
-        "title": "Cloud",
-        "description": "Ble ble ble",
+        "title": "Novedades en la Nube de Google",
+        "description": "Repasaremos los nuevos productos liberados por Google para que los desarrolladores construyan sus aplicaciones aprovechando el poder de la nube de Google.",
         "speakers": [5],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
@@ -119,7 +129,7 @@
     "company": "Frontend Developer Ninja",
     "photoUrl": "../../images/speakers/punx.jpg",
     "bio": "Matias es Frontend Developer, Mentor en Programá tu Futuro y Manager del Google Developer Group Argentina.",
-    "tags": ["Polymer", "JS"],
+    "tags": ["Polymer", "Javascript", "HTML", "CSS"],
     "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:glus",
@@ -131,33 +141,21 @@
     "charla": [{
         "id": 105,
         "title": "Polymer Code Lab",
-        "description": "En este Code Lab vamos a aprender a armar nuestro primer Web Component.<br><strong>Si queres participar del taller es necesario contar con una laptop</strong>.",
+        "description": "En este Code Lab vamos a revisar el sitio del <a href='https://twitter.com/hashtag/DevFestBaires?src=hash'>#DevFestBaires</a> 2015 y aprender a armar nuestro primer Web Component.<br><strong>Si queres participar del taller es necesario contar con una laptop</strong>.",
         "speakers": [6],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
     "id": 7,
-    "name": "Andrés Leonardo Martínez Ortiz",
-    "company": "Developer Program Manager en Google (España)",
-    "photoUrl": "../../images/speakers/ortiz.png",
-    "bio": "Andres",
-    "tags": ["Google", "GDG"],
-    "height": "position: relative; min-height: 700px",
-    "socials": [{
-        "name": "app-icons:glus",
-        "link": "https://plus.google.com/u/0/104070495650441591893"
-    }]
-}, {
-    "id": 8,
     "name": "Nicolas Bortolotti",
     "company": "Director de Relaciones para Desarrolladores Google",
     "photoUrl": "../../images/speakers/nick.jpg",
     "bio": "Nicolás ha desarrollado comunidades académicas y de investigación en varios países de Latinoamérica en la plataforma de desarrollo de Google, Web y Mobile. Nicolás ha participado académicamente como profesor de la Universidad Tecnológica Nacional (UTN), para las cátedras Ingeniería de Software Orientada a Objetos y Arquitecturas Móviles",
-    "tags": ["Google", "Polymer", "Mobile"],
-    "height": "position: relative; min-height: 700px",
+    "tags": ["Google", "Polymer", "Mobile", "Cloud Platform", "Big Data"],
+    "height": "position: relative; min-height: 1340px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "http://google.com/+NicolasBortolotti"
@@ -167,22 +165,22 @@
     }],
     "charla": [{
         "id": 106,
-        "title": "Web",
-        "description": "123, probando",
-        "speakers": [8],
+        "title": "Los 7 arquetipos de la tecnología moderna",
+        "description": "Descripción: actualmente se analizan gran cantidad de modelos tecnológicos, esto vislumbra gran cantidad de desafíos para los grupos de desarrollo actuales. Esta presentación propone 7 ambientes prácticos tecnológicos. Movilidad nativa, movilidad web, ambiente de persistencia móvil, análisis de datos masivos, y el poder de la nube actual.<br><br>Tech:<br>- Polymer [live demo]<br>- Android and Material Design [live demo]<br>- Android and Monetización Native Ads [live demo]<br>- Firebase [live demo]<br>- Cloud Platform,  GCE [live demo]<br>- Social Analysis and G+ [live demo]<br>- BigQuery  [live demo]",
+        "speakers": [7],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 9,
+    "id": 8,
     "name": "Mariano Molina",
     "company": "Partner Business Solutions - Google Argentina",
     "photoUrl": "../../images/speakers/marianom.png",
-    "bio": "",
-    "tags": ["Google", "Admob"],
-    "height": "position: relative; min-height: 700px",
+    "bio": "Mariano es un especialista en estrategia en el sector móvil que trabaja en el equipo de Partner Business Solutions de Google Argentina. Con un foco en el mercado móvil, trabaja con desarrolladores en toda latinoamérica para crear e implementar estrategias de monetización. Con experiencia en mercados financieros y lanzando emprendimientos, Mariano trabaja con potencialesPartners en crear relaciones sustentables y mutuamente beneficiosas con Google. ",
+    "tags": ["Google", "Admob", "Marketing"],
+    "height": "position: relative; min-height: 940px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/105681358343402624641"
@@ -192,16 +190,16 @@
     }],
     "charla": [{
         "id": 107,
-        "title": "????",
-        "description": "????",
-        "speakers": [9],
+        "title": "Monetizando Apps",
+        "description": "A lo largo de la charla vamos a discutir los aspectos externos al desarrollo de una App que hacen al éxito de ésta como negocio.",
+        "speakers": [8],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 10,
+    "id": 9,
     "name": "Maria Evangelina Ferreira",
     "company": "Docente Diseño Web - Universidad Tecnológica Nacional",
     "photoUrl": "../../images/speakers/evan.jpeg",
@@ -219,20 +217,20 @@
         "id": 108,
         "title": "Newton y CSS",
         "description": "Las animaciones realistas tienen una pizca de física. En esta charla vamos a hablar un poco de Newton y mucho de timing-functions!",
-        "speakers": [10],
+        "speakers": [9],
         "language": "es",
-        "complexity": "Principiantes",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 11,
+    "id": 10,
     "name": "Lourdes Montano",
     "company": "Frontend developer",
     "photoUrl": "../../images/speakers/lourdes.jpg",
     "bio": "Front-end developer. CSS lover. Climbing & surfing when not connected. Weird laughter.",
-    "tags": ["CSS", "HTML5", "SASS", "Javascript"],
-    "height": "position: relative; min-height: 890px",
+    "tags": ["CSS", "HTML", "CSS", "SASS", "Javascript"],
+    "height": "position: relative; min-height: 1080px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://plus.google.com/u/0/108462219757009920869/posts"
@@ -244,111 +242,120 @@
         "id": 109,
         "title": "Sass Maps",
         "description": "Al trabajar en proyectos grandes la arquitectura del código es muy importante para mantener todo bajo control. CSS no es la excepción.<br>A la hora de empezar a trabajar con nuestros archivos CSS, es escencial contar con una estructura que nos sirva a lo largo de todo el sitio. Esta charla es acerca del proceso de aprendizaje que tuve utilizando Sass Maps, una herramienta muy útil que me ayudó a organizar mi código y estructura para facilitar su mantenimiento.<br><br>Outline:<br>- Breve introducción a Sass Maps<br>- Diferentes usos de Maps<br>- Cómo crear estilos dinámicos<br>- Aplicación a grandes proyectos y equipos de trabajo",
-        "speakers": [11],
+        "speakers": [10],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 12,
+    "id": 11,
     "name": "Celina Twardowski",
-    "company": "ActionScript Developer",
+    "company": "Frontend Developer",
     "photoUrl": "../../images/speakers/celina.jpg",
-    "bio": "Bio Celina",
+    "bio": "Celina es desarrolladora Semi Senior AS3, AS2.Knowledge en Flex. OOP, Design Patterns. Experta en HTML, CSS, Javascript",
     "tags": ["ActionScript", "HTML5", "Javascript"],
     "height": "position: relative; min-height: 700px",
     "socials": [{
         "name": "app-icons:twitter",
         "link": "http://twitter.com/celitwa"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/celina-twardowski/19/802/47/en"
     }],
     "charla": [{
         "id": 110,
         "title": "Lo que el Flash nos dejó",
         "description": "Flash una vez fue nuestra mejor herramienta para jugar con gráficos y movimiento en la web, hasta que a Steve Jobs se le ocurrió que teniamos que empezar de nuevo",
+        "speakers": [11],
+        "language": "es",
+        "track": "GDG",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 12,
+    "name": "Laura Morinigo",
+    "company": "Software Developer",
+    "photoUrl": "../../images/speakers/lauram.png",
+    "bio": "",
+    "tags": ["HTML", "Oracle Forms", "JavaScript", "AJAX"],
+    "height": "position: relative; min-height: 650px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/103431131453381392397/"
+    }, {
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/laura-morinigo/22/62a/41/en"
+    }],
+    "charla": [{
+        "id": 111,
+        "title": "Responsive Web Design o Diseño Web Adaptable",
+        "description": "<br>- Conceptos Básicos<br>- Buenas Practicas<br>- Algunas tecnologías (CSS, jQuery, html5)<br>- Lo que viene (Diseño smartwatch, Mobile)",
         "speakers": [12],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
     "id": 13,
-    "name": "Martin Rabaglia",
-    "company": "Developer",
-    "photoUrl": "../../images/speakers/rabaglia.jpg",
-    "bio": "",
-    "tags": ["VR", "IOT"],
-    "height": "position: relative; min-height: 400px",
-    "socials": [{
-        "name": "app-icons:twitter",
-        "link": "http://twitter.com/tincho_for_ever"
-    }],
-    "charla": [{
-        "id": 111,
-        "title": "???",
-        "description": "???",
-        "speakers": [13],
-        "language": "es",
-        "complexity": "Intermedio",
-        "presentation": "",
-        "video": ""
-    }]
-}, {
-    "id": 14,
     "name": "Matias Molina",
     "company": "Google Developer Expert",
     "photoUrl": "../../images/speakers/molina.jpg",
-    "bio": "",
-    "tags": ["Google"],
-    "height": "position: relative; min-height: 400px",
+    "bio": "Matias estudio Bioingeniería, y tiene mas de 15 años de experiencia como desarrollador de software. Se desempeñó como desarrollador, I+D, Arquitecto y CTO. Es organizador del Santa Fe GTUG y es Google Developer Expert para las APIs de YouTube.",
+    "tags": ["Google", "Desarrollo", "GDE"],
+    "height": "position: relative; min-height: 590px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://www.google.com/+MatiasMolinas"
     }],
     "charla": [{
         "id": 112,
-        "title": "???",
-        "description": "???",
-        "speakers": [14],
+        "title": "",
+        "description": "",
+        "speakers": [13],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 15,
+    "id": 14,
     "name": "Francisco Solsona",
-    "company": "Developer Platform NoLA Lead, Google - Mexico City",
+    "company": "Developer Platform NoLA Lead, Google - Mexico",
     "photoUrl": "../../images/speakers/paco.png",
-    "bio": "",
+    "bio": "Francisco es líder de relaciones con desarrolladores en América Latina para Google, se enfoca en crecer el número de apps de alta calidad, promoviendo las plataformas para desarrolladores de Google, así como tecnologías abiertas; tanto a desarrolladores, como a  emprendedores. Ejecuta programas globales y soporta decenas de grupos técnicos de desarrolladores, emprendedores y expertos en diversos temas; para promover el crecimiento de los ecosistemas digitales en América Latina. Antes de dirigir las relaciones con desarrolladores en la región, trabajó por más de 10 años en la UNAM, como Coordinador de Cómputo de la Facultad de Ciencias y lideró varios proyectos de TI exitosos. Tiene amplia experiencia como profesor de ciencias de la computación y escribió un par de libros de fundamentos de computación. Ama los retos y ha sido encontrarlo trabajando en más de un proyecto a la vez, repetidamente. El tiempo libre lo comparte con su adorable (y geek) esposa, con amigos, practicando hiking, en el cine o escuchando novelas de fantasía y ciencia ficción.",
     "tags": ["Google", "Platform"],
-    "height": "position: relative; min-height: 400px",
+    "height": "position: relative; min-height: 1220px",
     "socials": [{
         "name": "app-icons:glus",
         "link": "https://www.google.com/+solsona"
     }],
     "charla": [{
         "id": 113,
-        "title": "???",
-        "description": "???",
-        "speakers": [15],
+        "title": "",
+        "description": "",
+        "speakers": [14],
         "language": "es",
-        "complexity": "Intermedio",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 16,
+    "id": 15,
     "name": "Melanie Sclar",
     "company": "Programadora - UBA",
     "photoUrl": "../../images/speakers/melanie.jpg",
     "bio": "Alumna de la Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales. Melanie fue una de las participantes del Mundial de programación donde salieron en el puesto numero 18 por encima de Hardvard.",
     "tags": ["Programación", "UBA"],
-    "height": "position: relative; min-height: 800px",
+    "height": "position: relative; min-height: 1570px",
     "socials": [{
         "name": "app-icons:twitter",
         "link": "http://twitter.com/melaniesclar"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/melanie-sclar/b5/47/77"
     }],
     "charla": [{
         "id": 114,
@@ -356,7 +363,148 @@
         "description": "Las competencias de programación son certámenes donde se pone a prueba la capacidad de resolver problemas utilizando algoritmos conocidos combinándolos con la creatividad propia de aplicarlos a cada problema planteado, así como la capacidad de programarlos en el menor tiempo posible.<br>Tanto en sus versiones por equipos e individuales, estas competencias están en constante crecimiento hace varios años y las habilidades que entrenan son muy requeridas. Varias empresas ya tienen sus propias competencias, entre las que se destacan la <strong>Google Codejam</strong> y la Facebook HackerCup, que se suman a la competencia más prestigiosa del área: la ICPC (International Collegiate Programming Contest), organizada por la ACM (Association of Computing Machinery).<br>Por su naturaleza competitiva, estos certámenes tienen varias particularidades que los diferencian de los demás ámbitos de la programación, y hacen que requieran un entrenamiento específico. En esta charla ahondaremos en este fascinante mundo de las competencias de programación, y cómo llegamos a ser campeones lationamericanos en la última edición de la ACM-ICPC.",
         "speakers": [15],
         "language": "es",
-        "complexity": "WTM",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 16,
+    "name": "Erica Andrea Ruiz Tabarez",
+    "company": "Programador - Desarrollador",
+    "photoUrl": "../../images/speakers/erica.png",
+    "bio": "Durante mi carrera he trabajado en proyectos para empresas como Bayer conosur, Warner Music Conosur, Revista Parati, Revistas Runner a través de la Agencia de Publicidad Adverit.<br>Investigadora de las nuevas tecnologías de Información. Amante de la programación y las nuevas tecnologías para el desarrollo de aplicaciones web.<br>Después de asistir a una charla de 'Mujer en la Tecnología' organizados por Ada IT y Google Developer Group Buenos Aires en 2014, encontrando así varias mujeres interesadas en el tema de la tecnología y haciendo parte de el cambio social para involucrar más mujeres a la tecnología, me animé a continuar con mi pasión en el mundo de la informática.",
+    "tags": ["Programación", "Desarrollo"],
+    "height": "position: relative; min-height: 1580px",
+    "socials": [{
+        "name": "",
+        "link": ""
+    }],
+    "charla": [{
+        "id": 115,
+        "title": "Mejoramiento en los procesos de documentación en aplicaciones web y móviles",
+        "description": "A medida que el negocio de las aplicaciones móviles se va expandiendo y a la par de esa expansión también crece el número de desarrolladores; las empresas encargadas de vender, distribuir o producir éstas aplicaciones se enfrentan a la deficiencia  en la documentación y estandarización en los desarrollos Web; tener claro durante la fase de análisis,  desarrollo y programación la documentación, estándar o norma requerida, es de vital importancia para la escalabilidad y compactibilidad de los  desarrollos web, móviles; las instituciones  universitarias, y todos los agentes involucrados en el proceso de generadores de nuevos desarrolladores cumplen un rol importante y son pieza fundamental para una web que avanza.",
+        "speakers": [16],
+        "language": "es",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 17,
+    "name": "Sabina Schneider",
+    "company": "Ingeniero en sistemas",
+    "photoUrl": "../../images/speakers/sabina.png",
+    "bio": "Ingeniero en sistemas - UTN Buenos Aires - Technical Director en Globant<br><br>Sabina tiene una amplia experiencia en desarrollo Java y Metodologías Ágiles aplicada a soluciones innovadoras para empresas como Disney, Canal 4, Autodesk y Y & R.<br>En el pasado, se ha desarrollado en diferentes lenguajes de programación, lo que ha ayudado a abrir su mente acerca de las tecnologías. Se ha especializado en el campo de Big Data utilizando diferentes soluciones de código abierto, la implementación de soluciones de Dashboard personalizado y AWS como Infraestructura.",
+    "tags": ["Test Driven Development", "Agile", "Software Architecture", "Java", "FrontEnd", "Big data"],
+    "height": "position: relative; min-height: 1600px",
+    "socials": [{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/sabina-a-schneider/1/a48/2a7"
+    }],
+    "charla": [{
+        "id": 116,
+        "title": "Monetizacion y tendencias de mercado sobre Big Data",
+        "description": "El mundo ha cambiado y uno de los nuevos desafíos es obtener información en grandes volúmenes de datos, volumen que proviene de las redes sociales, el amplio uso de los dispositivos móviles, además de un fenómeno que está teniendo más presencia en el mercado: IoT. Solo aquellas compañías que invierten en el análisis de información y en un mayor y mejor conocimiento de su público aprovecharán realmente el valor de la información. Técnicamente hablando el ecosistema Big Data es enorme y las compañías están aprovechando sus ventajas para volverse flexibles y poder escalar.<br>Durante esta sesión hablaremos sobre el impacto de este fenómeno en la sociedad, cómo la afecta, ayuda y transforma a través de ejemplos como eCommerce. ",
+        "speakers": [17],
+        "language": "es",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 18,
+    "name": "Maria Zavala",
+    "company": "QA Technical Director",
+    "photoUrl": "../../images/speakers/zabala.png",
+    "bio": "María José es Ingeriera en Sistemas de Información egresada de UTN FRBA, certificada en ISTQB con más de 15 años de experiencia en el área de Calidad en la Industria del desarrollo de Software.<br>Tiene experiencia trabajando tanto en Control de Calidad o Testing como en QA en definición e implementación de procesos.<br>Su paso por proyectos para distintos tipos de industrias, tanto para pequeñas empresas como multinacionales, le ha dado la posibilidad de adquirir conocimiento y desarrollar su especialización confrontando importantes desafíos tanto tecnológicos como de procesos.<br>Su experiencia comprende tanto metodologías de testing tradicionales como agile, ocupando diversidad de roles y en los últimos años especialmente focalizada en el liderazgo de equipos, desarrollo de estrategias y procesos de testing para gran diversidad de clientes.",
+    "tags": ["Agile Testing", "Testing", "Test Planning", "Test Estimation"],
+    "height": "position: relative; min-height: 1960px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/104046951265885049033/posts"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/mar%C3%ADa-jos%C3%A9-p%C3%A9rez-zavala/16/2b0/4a3"
+    }],
+    "charla": [{
+        "id": 117,
+        "title": "Los nuevos desafíos del testing",
+        "description": "La tecnología avanza rápidamente, los usuarios están cada vez más cerca de la tecnología que ya es parte de su vida, con lo cual tienen expectativas muy altas.<br>En este contexto la industria del desarrollo de Software tiene que adaptarse y en particular el aseguramiento de la calidad del producto final toma mayor relevancia. <br>Se puede seguir haciendo Testing de la misma manera en que se hacía años atrás? los plazos de entrega cambiaron, las plataformas cambian a diario, el volumen de información es cada vez mayor, los tiempos de respuesta de cualquier SW deben ser inmediatos. Entonces, sí es necesario cambiar la mirada, ampliar el acance, ajustar los procesos, usar nuevas técnicas y capacitarse en nuevas tecnologías.<br>El objetivo de la chara es analizar los nuevos desafíos y cómo el testing debe cambiar el enfoque para lograr la cobertura de pruebas necesarias. Entre otros temas se verá: Testing Tradicional vs Agile, Multi-plataforma, Mobile, CMSs, Multilenguaje, Big Data, etc.",
+        "speakers": [18],
+        "language": "es",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 19,
+    "name": "Isadora Valline",
+    "company": "Visual Design Manager",
+    "photoUrl": "../../images/speakers/isadora.jpg",
+    "bio": "Isadora Valline es actualmente Visual Design Manager en Globant, liderando un equipo de alrededor de 70 diseñadores. Con mas de 15 años de experiencia en el diseño grafico y UI, se ha desarrollado trabajando para importantes compañias de todos los ambitos. La experiencia en liderazgo para llevar adelante la Practica de Visual Design junto a nuevas tecnologias conduciendo sesiones cognitivas y practicas, llevaron a Isadora a ganar experiencia en proyectos creativos asi como tambien interfaces complejas, aplicaciones mobiles, software para TV y gaming.",
+    "tags": ["User Interface Design", "Web Design", "Graphic Design", "CSS"],
+    "height": "position: relative; min-height: 1230px",
+    "socials": [{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/isadora-valline/77/2b9/2a"
+    }],
+    "charla": [{
+        "id": 118,
+        "title": "El Diseño y su insercion en la tecnologia digital.",
+        "description": "<br>- ¿Qué es un Diseñador? (perfil, características)<br> - ¿Cuál es su objetivo dentro de un proyecto de desarrollo de software? (mision, objetivos con respecto a su perfil y tareas).<br> - ¿Cómo alcanza ese objetivo? (practicas y metodologias aplicadas para lograr esos objetivos).<br> - Interacción con otros roles.<br>- Algunos Casos de exito.",
+        "speakers": [19],
+        "language": "es",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 20,
+    "name": "Valeria Viva",
+    "company": "Director en Ser 2.0",
+    "photoUrl": "../../images/speakers/valeria.jpg",
+    "bio": "Ingeniera en Sistemas, emprendedora y ex nerd. Fundadora y socia de Ser 2.0, agencia de comunicación online. Capacitadora en la Academia BA Emprende Programa del Gobierno de la Ciudad de Buenos Aires.<br>Durante 15 años se desarrolló en empresas de primer nivel en el área de Tecnología e Internet. Lideró diversos proyectos y equipos multidisciplinarios para Sudamérica. Dicta charlas y talleres en universidades, fundaciones y empresas. Socia fundadora en She Entrepreneur.<br>Escribe sobre tecnología para medios como EntreMujeres de Clarín. Es la autora de Mujer y Tecnología.",
+    "tags": ["Web 2.0", "Social Media", "Social Media Marketing", "Marketing en Internet", "Project Management"],
+    "height": "position: relative; min-height: 1100px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/u/0/+ValeriaViva/posts"
+    },{
+        "name": "app-icons:twitter",
+        "link": "https://twitter.com/valeriaviva"
+    }],
+    "charla": [{
+        "id": 119,
+        "title": "10 tips de Project Management en el desarrollo web",
+        "description": "Buenas prácticas, herramientas y tips para gestionar proyectos de desarrollo web eficientemente",
+        "speakers": [20],
+        "language": "es",
+        "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 21,
+    "name": "Lara Medialdea",
+    "company": "Líder del Proyecto Programá tu Futuro",
+    "photoUrl": "../../images/speakers/lara.jpg",
+    "bio": "Lara Medialdea es Licenciada en Relaciones Internacionales y Coordinadora de <strong>Programá tu Futuro</strong> iniciativa del Gobieno de la Ciudad de Buenos Aires que tiene como principal objetivo promover y difundir el aprendizaje de programación y nuevas tecnologías a través de diversos proyectos. Miembro de Women Techmakers Buenos Aires y consultora de relaciones institucionales para empresas de tecnología.",
+    "tags": ["Redes sociales", "Políticas públicas", "Relaciones internacionales "],
+    "height": "position: relative; min-height: 900px",
+    "socials": [{
+        "name": "app-icons:twitter",
+        "link": "https://twitter.com/laramedialdea"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/lara-medialdea/20/703/662"
+    }],
+    "charla": [{
+        "id": 120,
+        "title": "Keynote Women Techmakers",
+        "description": "Bienvenida al Google DevFest 2015, Buenos Aires e introducción a Woman Techmakers.",
+        "speakers": [21],
+        "language": "es",
+        "track": "WTM",
         "presentation": "",
         "video": ""
     }]
