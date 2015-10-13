@@ -224,7 +224,7 @@ paper-button[raised].colorful {
 @media (min-width: 768px) {
     .container {
         margin: 0 auto;
-        padding: 60px 16px;
+        padding: 40px 16px;
         max-width: 896px;
     }
     .card-container {

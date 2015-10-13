@@ -1,0 +1,77 @@
+<dom-module id="photo-block">
+    <style>
+    :host {
+        display: block;
+        background: var(--accent-color);
+    }
+
+    .heading {
+        color: #fff;
+        margin: 0 !important;
+    }
+
+    .photo-wrapper {
+        height: 200px;
+    }
+
+    .placeholder-color {
+        width: 100%;
+        height: 100%;
+    }
+    .placeholder-big {
+        background-position: 100% 50% !important
+    }
+
+    @media (min-width: 768px) {
+        .photo-wrapper {
+            height: 450px;
+        }
+        .photo-wrapper-2 {
+            height: 250px;
+        }
+        .big {
+            flex: 2;
+        }
+    }
+    </style>
+    <template>
+        <div class="container container-narrow flex relative layout vertical-horizontal center-center">
+            <h4 class="heading flex text self-center text-center">GDG DevFest 2014</h4>
+            <!-- <paper-button class="white border-button open-dialog-button" on-tap="playVideo">See how it was</paper-button> -->
+        </div>
+
+        <div class="photo-wrapper layout horizontal">
+            <div class="flex relative big">
+                <iron-image src="{{photos.big}}" class="placeholder-color placeholder-big fit" sizing="cover" preload fade></iron-image>
+            </div>
+            <div class="flex layout vertical">
+                <div class="flex relative">
+                    <iron-image src="{{photos.small.0}}" class="placeholder-color fit" sizing="cover" preload fade></iron-image>
+                </div>
+                <div class="flex relative hidden-xs">
+                    <iron-image src="{{photos.small.1}}" class="placeholder-color fit" sizing="cover" preload fade></iron-image>
+                </div>
+            </div>
+        </div>
+        <div class="photo-wrapper-2 layout horizontal">
+            <div class="flex relative">
+                <iron-image src="{{photos.big1}}" class="placeholder-color placeholder-big fit" sizing="cover" preload fade></iron-image>
+            </div>
+        </div>
+    </template>
+</dom-module>
+<script>
+Polymer({
+    is: 'photo-block',
+    properties: {
+        photos: Object
+    },
+    attached: function() {
+        this.photos = {
+            big: '../images/fotos/foto4.jpg',
+            big1: '../images/fotos/foto5.jpg',
+            small: ['../images/fotos/foto2.jpg', '../images/fotos/foto3.jpg']
+        };
+    }
+});
+</script>
