@@ -1,0 +1,197 @@
+<dom-module id="schedule-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                color: var(--social-font-color);
+                margin-top: 60px;
+            }
+            .container-tit-full {
+                background-color: var(--default-primary-color);
+                background-image: url(../../images/bg_pattern1.png), url(../../images/bg_pattern.png);
+                background-origin: padding-box, padding-box;
+                background-size: 680px 355px, 562px 350px;
+                background-position: 50%;
+                max-width: 100%;
+                padding: 0;
+            }
+            .container-horarios {
+                padding: 0; 
+            }
+            .container .heading {
+                margin-bottom: 0;
+                color: #fff;
+            }
+            .container .heading-sala {
+                margin:0;
+                padding: 0;
+                font-size: 20px;
+                text-align: center;
+            }
+            .container-horarios {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid  var(--light-primary-color);
+                padding-bottom: 5px;
+            }
+            .container-charlas {
+                padding-top:10px;
+                padding-bottom: 10px;
+            }
+            .salas-tit-full {
+                background-color: var(--light-primary-color);
+                max-width: 100%;
+                padding: 0;
+            }
+            paper-card {
+                min-width: 100%;
+            }
+            .flex-3 paper-card {
+                min-width: 96%;
+            }
+            .track-gral {
+                border-top: 2px solid var(--light-primary-color);
+            }
+            .track-gdg {
+                border-top: 2px solid var(--dark-primary-color);
+            }
+            .track-wtm {
+                border-top: 2px solid var(--fucsia-claro);
+            }
+            .track-keynote {
+                border-top: 2px solid var(--accent-color);
+            }
+            .charla-title {
+                font-size: 18px;
+            }
+        </style>
+        <iron-ajax auto url="[[source]]" handle-as="json" on-response="peopleLoaded" last-response="{{peopleTemp}}"></iron-ajax>
+        <div class="container container-tit-full">
+            <div class="container relative layout horizontal container-tit">
+                <div class="flex content-center">
+                    <h4 class="heading">Schedule</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container salas-tit-full">
+            <div class="container relative layout horizontal salas-tit">
+                <div class="flex flex-3 content-center">
+                    <h3 class="heading-sala">Sala 1</h3>
+                </div>
+                <div class="flex flex-3 content-center">
+                    <h3 class="heading-sala">Sala 2</h3>
+                </div>
+                <div class="flex flex-3 content-center">
+                    <h3 class="heading-sala">Sala 3</h3>
+                </div>
+                <div class="flex flex-3 content-center">
+                    <h3 class="heading-sala">Sala 4</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13:30 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>13:30</span>
+            </div>
+        </div>
+
+         <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex content-center">
+                <paper-card class="track-gral">
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            Apertura de puertas, ingreso y registro.
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+        <!-- 14:00 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>14:00</span>
+            </div>
+        </div>
+
+         <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex content-center">
+                <paper-card class="track-keynote" id="2">
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            <div class="charla-title">Keynote</div>
+
+                            <div class="speaker layout horizontal style-scope schedule-block">
+                                <iron-image src="" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center style-scope schedule-block">
+                                    <span class="name self-start style-scope schedule-block">Juan Manuel Baiutti</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+
+        <!-- 14:25 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>14:25</span>
+            </div>
+        </div>
+        <div class="container relative layout vertical-horizontal">
+            <div class="flex flex-3 content-center">
+                <paper-card>
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card>
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            assd
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card>
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            assd
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card>
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            assd
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'schedule-block',
+        properties: {
+            source: String,
+            tags: Array
+        }
+    });
+</script>

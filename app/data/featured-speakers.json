@@ -107,11 +107,11 @@
     "tags": ["Desarrollo", "Cloud", "Scrum", "Agiles"],
     "height": "position: relative; min-height: 560px",
     "socials": [{
-        "name": "app-icons:linkedin",
-        "link": "https://www.linkedin.com/in/juanirungaray"
-    }, {
         "name": "app-icons:twitter",
         "link": "http://twitter.com/jirungaray"
+    }, {
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/in/juanirungaray"
     }],
     "charla": [{
         "id": 104,
@@ -345,10 +345,10 @@
 }, {
     "id": 15,
     "name": "Melanie Sclar",
-    "company": "Programadora - UBA",
+    "company": "Algorithms and Mathematics Problem Solver - UBA",
     "photoUrl": "../../images/speakers/melanie.jpg",
-    "bio": "Alumna de la Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales. Melanie fue una de las participantes del Mundial de programación donde salieron en el puesto numero 18 por encima de Hardvard.",
-    "tags": ["Programación", "UBA"],
+    "bio": "Alumna de la Lic. en Ciencias de la Computación y en Ciencias Matemáticas en la UBA. Apasionada por la resolución de problemas matemáticos y algorítmicos, compite en certámenes de matemática y computación desde hace casi 10 años. Fue Campeona Nacional de las Olimpíadas Matemáticas y recibió múltiples premios a nivel internacional en esa disciplina.<br>Entre sus logros en competencias de programación se destacan los de finalista mundial de la ACM-ICPC en 2014 y 2015, Campeona Latinoamericana en 2015 y Campeona en el Torneo Argentino de Programación 2014, todos ellos junto a su equipo, 'Melarita'. En la ACM-ICPC, también conocida popularmente como el “Mundial de la Programación” fueron campeones lationamericanos, ocupando el puesto 18 de 128 en la competencia y superando a universidades como Stanford, Harvard y Carnegie Mellon.",
+    "tags": ["Programación", "Algoritmos", "Matemáticas", "UBA"],
     "height": "position: relative; min-height: 1570px",
     "socials": [{
         "name": "app-icons:twitter",
@@ -359,7 +359,7 @@
     }],
     "charla": [{
         "id": 114,
-        "title": "Programación de competencia",
+        "title": "Las competencias de programación: resolver problemas también es un deporte",
         "description": "Las competencias de programación son certámenes donde se pone a prueba la capacidad de resolver problemas utilizando algoritmos conocidos combinándolos con la creatividad propia de aplicarlos a cada problema planteado, así como la capacidad de programarlos en el menor tiempo posible.<br>Tanto en sus versiones por equipos e individuales, estas competencias están en constante crecimiento hace varios años y las habilidades que entrenan son muy requeridas. Varias empresas ya tienen sus propias competencias, entre las que se destacan la <strong>Google Codejam</strong> y la Facebook HackerCup, que se suman a la competencia más prestigiosa del área: la ICPC (International Collegiate Programming Contest), organizada por la ACM (Association of Computing Machinery).<br>Por su naturaleza competitiva, estos certámenes tienen varias particularidades que los diferencian de los demás ámbitos de la programación, y hacen que requieran un entrenamiento específico. En esta charla ahondaremos en este fascinante mundo de las competencias de programación, y cómo llegamos a ser campeones lationamericanos en la última edición de la ACM-ICPC.",
         "speakers": [15],
         "language": "es",
@@ -505,6 +505,31 @@
         "speakers": [21],
         "language": "es",
         "track": "WTM",
+        "presentation": "",
+        "video": ""
+    }]
+}, {
+    "id": 22,
+    "name": "Cristian Reynaga",
+    "company": "Gerente de Sensorización Urbana",
+    "photoUrl": "../../images/speakers/reynaga.jpg",
+    "bio": "Desarrollador en interactividad. Coordino los proyectos de Internet de las Cosas y sensores del Laboratorio de Gobierno del Ministerio de Modernización.",
+    "tags": ["IOT", "Arduino", "Sensores"],
+    "height": "position: relative; min-height: 900px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/u/0/103431886089352521206/posts"
+    },{
+        "name": "app-icons:twitter",
+        "link": "https://twitter.com/_creynaga"
+    }],
+    "charla": [{
+        "id": 121,
+        "title": "Internet de las cosas: de la intuición al desarrollo.",
+        "description": "El objetivo del encuentro es introducir a los asistentes a 'Internet de las Cosas', una conceptualización de los múltiples dispositivos 'inteligentes' que rápidamente están formando parte de nuestro entorno cotidiano. Luego se presentarán algunas herramientas y plataformas para comenzar a prototipar dispositivos y conectarlos en muy pocos pasos. Por último se compartirán proyectos de IoT que se están desarrollando en el Laboratorio de Gobierno del Ministerio de Modernización.",
+        "speakers": [22],
+        "language": "es",
+        "track": "GDG",
         "presentation": "",
         "video": ""
     }]

@@ -3,28 +3,37 @@
         <style>
             :host {
                 display: block;
+                margin-top: 40px;
             }
             ::content .container .container {
                 padding: 10px 0;
             }
             ::content iron-image {
-                width: 280px;
-                height: 100px;
+                width: 260px;
+                height: 90px;
             }
             ::content a.sponsors-block {
                 margin: 0 10px 10px;
             }
 
+            .container .heading-min {
+                font-size: 18px;
+            }
+
             @media (max-width: 767px) {
                 ::content iron-image {
-                    width: 250px;
-                    height: 100px;
+                    width: 200px;
+                    height: 80px;
                 }
+                ::content a.sponsors-block {
+                margin: 0 0 5px;
+            }
             }
         </style>
         <div class="container text-center">
-            <h4 class="heading">Organizador</h4>
-            <div class="container relative layout horizontal center-center">
+            <h4 class="heading">Partners</h4>
+            <h4 class="heading heading-min">Organizador</h4>
+            <div class="container relative layout vertical-horizontal center-center">
                 <a href="http://www.gdg.com.ar" title="GDG Buenos Aires" target="_blank">
                     <iron-image class="flex" src="../../images/sponsors/gdg-limpio.png" sizing="contain"></iron-image>
                 </a>
@@ -36,8 +45,8 @@
 
             <br><br>
 
-            <h4 class="heading">Sponsor General</h4>
-            <div class="container relative layout vertical center">
+            <h4 class="heading heading-min">Sponsor General</h4>
+            <div class="container relative layout vertical-horizontal center-center">
                 <a href="https://developers.google.com/" title="Google Developers" target="_blank">
                     <iron-image class="flex" src="../../images/sponsors/google_dev.png" sizing="contain"></iron-image>
                 </a>
@@ -45,19 +54,23 @@
 
             <br><br>
 
-            <h4 class="heading">Sponsors</h4>
-            <div class="container relative layout horizontal center-center">
+            <h4 class="heading heading-min">Sponsors</h4>
+            <div class="container relative layout vertical-horizontal center-center">
+            <a href="http://globant.com/" title="Globant" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/globant.png" sizing="contain"></iron-image>
+                </a>
                 <a href="http://escueladevrock.com/" title="Escuela Dev Rock!" target="_blank">
                     <iron-image class="flex" src="../../images/sponsors/escuela-dev-rock.png" sizing="contain"></iron-image>
                 </a>
-                <a href="http://globant.com/" title="Globant" target="_blank">
-                    <iron-image class="flex" src="../../images/sponsors/globant.png" sizing="contain"></iron-image>
+                <a href="http://toptal.com/" title="Toptal" target="_blank">
+                    <iron-image class="flex" src="../../images/sponsors/toptal.png" sizing="contain"></iron-image>
                 </a>
+                
             </div>
 
             <br><br>
 
-            <h4 class="heading">Venue</h4>
+            <h4 class="heading heading-min">Venue</h4>
             <div class="container relative layout vertical center">
                 <a href="http://www.palermo.edu/" title="Universidad de Palermo" target="_blank">
                     <iron-image class="flex" src="../../images/sponsors/up.jpg" sizing="contain"></iron-image>

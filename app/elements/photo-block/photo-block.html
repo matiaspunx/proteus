@@ -5,6 +5,18 @@
         background: var(--accent-color);
     }
 
+    .container-bg {
+        background-image: url(../../images/bg_pattern1.png), url(../../images/bg_pattern.png);
+        background-origin: padding-box, padding-box;
+        background-size: 680px 355px, 562px 350px;
+        background-position: 50%;
+    }
+
+    .separador-celeste {
+        background: var(--accent-color);
+        height: 30px;
+    }
+
     .heading {
         color: #fff;
         margin: 0 !important;
@@ -35,7 +47,7 @@
     }
     </style>
     <template>
-        <div class="container container-narrow flex relative layout vertical-horizontal center-center">
+        <div class="container container-narrow flex relative layout vertical-horizontal center-center container-bg">
             <h4 class="heading flex text self-center text-center">GDG DevFest 2014</h4>
             <!-- <paper-button class="white border-button open-dialog-button" on-tap="playVideo">See how it was</paper-button> -->
         </div>
@@ -57,6 +69,10 @@
             <div class="flex relative">
                 <iron-image src="{{photos.big1}}" class="placeholder-color placeholder-big fit" sizing="cover" preload fade></iron-image>
             </div>
+        </div>
+
+        <div class="relative layout vertical-horizontal">
+            <div class="flex content-center separador-celeste"></div>
         </div>
     </template>
 </dom-module>
