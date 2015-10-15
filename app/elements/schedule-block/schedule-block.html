@@ -5,6 +5,7 @@
                 display: block;
                 color: var(--social-font-color);
                 margin-top: 60px;
+                margin-bottom: 80px;
             }
             .container-tit-full {
                 background-color: var(--default-primary-color);
@@ -46,8 +47,20 @@
             paper-card {
                 min-width: 100%;
             }
+            .flex-3, .flex-6 {
+                padding: 0 5px;
+            }
             .flex-3 paper-card {
-                min-width: 96%;
+                min-height: 165px;
+            }
+            .flex-6 paper-card {
+                min-height: 145px;
+            }
+            .flex-3:first-child, .flex-6:first-child {
+                padding-left: 0;
+            }
+            .flex-3:last-child, .flex-6:last-child {
+                padding-right: 0;
             }
             .track-gral {
                 border-top: 2px solid var(--light-primary-color);
@@ -62,19 +75,60 @@
                 border-top: 2px solid var(--accent-color);
             }
             .charla-title {
-                font-size: 18px;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .person-img {
+                width: 35px;
+                height: 35px;
+                margin-right: 5px
+            }
+            .name {
+                font-size: 14px;
+            }
+            .sala {
+                position: absolute;
+                top: -10px;
+                right: 5px;
+                background: red;
+                padding: 3px;
+                border-radius: 3px;
+                font-size: 10px;
+            }
+            .track-gdg .sala {
+                background-color: var(--dark-primary-color);
+                color: #fff;
+            }
+            .track-wtm .sala {
+                background-color: var(--fucsia-claro);
+                color: #fff;
+            }
+            .container-horarios {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+            .mb5 {
+                margin-bottom: 5px
+            }
+            @media (max-width: 767px) {
+                 .flex-3, .flex-6 {
+                padding: 0px;
+            }
             }
         </style>
-        <iron-ajax auto url="[[source]]" handle-as="json" on-response="peopleLoaded" last-response="{{peopleTemp}}"></iron-ajax>
+        <iron-ajax auto url="[[source]]" handle-as="json" on-response="personLoaded" last-response="{{person}}"></iron-ajax>
+
+
         <div class="container container-tit-full">
             <div class="container relative layout horizontal container-tit">
-                <div class="flex content-center">
+                <div class="flex content-center text-center">
                     <h4 class="heading">Schedule</h4>
                 </div>
             </div>
         </div>
 
-        <div class="container salas-tit-full">
+        <!-- <div class="container salas-tit-full">
             <div class="container relative layout horizontal salas-tit">
                 <div class="flex flex-3 content-center">
                     <h3 class="heading-sala">Sala 1</h3>
@@ -89,7 +143,7 @@
                     <h3 class="heading-sala">Sala 4</h3>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 13:30 -->
         <div class="container relative layout vertical-horizontal container-horarios">
@@ -97,7 +151,6 @@
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>13:30</span>
             </div>
         </div>
-
          <div class="container relative layout vertical-horizontal container-charlas">
             <div class="flex content-center">
                 <paper-card class="track-gral">
@@ -118,16 +171,41 @@
         </div>
 
          <div class="container relative layout vertical-horizontal container-charlas">
-            <div class="flex content-center">
-                <paper-card class="track-keynote" id="2">
+            <div class="flex flex-6 content-center">
+                <paper-card class="track-keynote">
                     <div class="paper-card-container">
-                        <div class="card-content layout horizontal">
-                            <div class="charla-title">Keynote</div>
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.1.charla.0.title}}</h4>
+                            
+                            <div class="speaker layout horizontal mb5">
+                                <iron-image src="{{person.1.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div id$="{{person.1.id}}" class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.1.name}}</span>
+                                </div>
+                            </div>
 
-                            <div class="speaker layout horizontal style-scope schedule-block">
-                                <iron-image src="" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
-                                <div class="person-detail flex layout vertical center-center style-scope schedule-block">
-                                    <span class="name self-start style-scope schedule-block">Juan Manuel Baiutti</span>
+                            <div class="speaker layout horizontal mb5">
+                                <iron-image src="{{person.3.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.3.name}}</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+            <div class="flex flex-6 content-center">
+                <paper-card class="track-keynote">
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.20.charla.0.title}}</h4>
+                            
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.20.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.20.name}}</span>
                                 </div>
                             </div>
 
@@ -144,44 +222,395 @@
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>14:25</span>
             </div>
         </div>
-        <div class="container relative layout vertical-horizontal">
-            <div class="flex flex-3 content-center">
-                <paper-card>
+        <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex flex-3 vertical content-center">
+                <paper-card class="track-gdg">
+                    <div class="sala">Sala 1</div>
                     <div class="paper-card-container">
-                        <div class="card-content layout horizontal">
-                            
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.6.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.6.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.6.name}}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </paper-card>
             </div>
-            <div class="flex flex-3 content-center">
-                <paper-card>
+            <div class="flex flex-3 vertical content-center">
+                <paper-card class="track-wtm">
+                    <div class="sala">Sala 2</div>
                     <div class="paper-card-container">
-                        <div class="card-content layout horizontal">
-                            assd
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.19.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.19.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.19.name}}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </paper-card>
             </div>
-            <div class="flex flex-3 content-center">
-                <paper-card>
+            <div class="flex flex-3 vertical content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 3</div>
                     <div class="paper-card-container">
-                        <div class="card-content layout horizontal">
-                            assd
-                        </div>
-                    </div>
-                </paper-card>
-            </div>
-            <div class="flex flex-3 content-center">
-                <paper-card>
-                    <div class="paper-card-container">
-                        <div class="card-content layout horizontal">
-                            assd
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.9.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.9.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.9.name}}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </paper-card>
             </div>
 
+            <div class="flex flex-3 vertical content-center">
+            <paper-card class="track-gdg">
+            <div class="sala">Sala 4</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.21.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.21.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.21.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+
+        <!-- 15:10 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>15:10</span>
+            </div>
+        </div>
+        <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 1</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.12.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.12.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.12.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-wtm">
+                <div class="sala">Sala 2</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.17.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.17.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.17.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 3</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.5.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.5.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.5.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+            <div class="flex flex-3 content-center">
+            <paper-card class="track-wtm">
+            <div class="sala">Sala 4</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.18.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.18.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.18.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+
+        <!-- 15:55 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>15:55</span>
+            </div>
+        </div>
+        <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 1</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.2.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.2.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.2.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-wtm">
+                <div class="sala">Sala 2</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.16.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.16.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.16.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 3</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.8.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.8.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.8.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+            <div class="flex flex-3 content-center">
+            <paper-card class="track-gdg">
+            <div class="sala">Sala 4</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.7.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.7.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.7.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+        <!-- 16:35 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>16:35</span>
+            </div>
+        </div>
+         <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex content-center">
+                <paper-card class="track-gral">
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            Break
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+
+
+        <!-- 17:05 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>17:05</span>
+            </div>
+        </div>
+        <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 1</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.13.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.13.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.13.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-wtm">
+                <div class="sala">Sala 2</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.15.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.15.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.15.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 3</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.4.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.4.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.4.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+            <div class="flex flex-3 content-center">
+            <paper-card class="track-wtm">
+            <div class="sala">Sala 4</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.14.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.14.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.14.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+        </div>
+        
+
+        <!-- 17:50 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>17:50</span>
+            </div>
+        </div>
+        <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                <div class="sala">Sala 1</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.0.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.0.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.0.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-wtm">
+                <div class="sala">Sala 2</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.11.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.11.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.11.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+            <div class="flex flex-3 content-center">
+                <paper-card class="track-gdg">
+                    <div class="sala">Sala 3</div>
+                    <div class="paper-card-container">
+                        <div class="card-content layout vertical">
+                            <h4 class="charla-title">{{person.10.charla.0.title}}</h4>
+                            <div class="speaker layout horizontal">
+                                <iron-image src="{{person.10.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.10.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
+
+            <div class="flex flex-3 content-center">
+            <!-- empty -->
+            </div>
+        </div>
+
+        <!-- 18:35 -->
+        <div class="container relative layout vertical-horizontal container-horarios">
+            <div class="flex content-left">
+                <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>18:35</span>
+            </div>
+        </div>
+         <div class="container relative layout vertical-horizontal container-charlas">
+            <div class="flex content-center">
+                <paper-card class="track-gral">
+                    <div class="paper-card-container">
+                        <div class="card-content layout horizontal">
+                            Charla de cierre y sorteos
+                        </div>
+                    </div>
+                </paper-card>
+            </div>
         </div>
     </template>
 </dom-module>
@@ -190,8 +619,15 @@
     Polymer({
         is: 'schedule-block',
         properties: {
-            source: String,
-            tags: Array
+            source: String
+        },
+        personLoaded: function(event, response) {
+            this.persona = this.person[1].charla[0].title;
+            console.log(this.persona);
+        }, 
+        openSpeaker: function(event) {
+            console.log(event.target.id);
+            //page.redirect('/speakers/' + event.target.id);
         }
     });
 </script>

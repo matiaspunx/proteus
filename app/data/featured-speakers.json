@@ -1,5 +1,5 @@
 [{
-    "id": 1,
+    "id": 0,
     "name": "Jonatan Ariste",
     "company": "Desarrollador y Diseñador UX",
     "photoUrl": "../../images/speakers/joni.png",
@@ -17,14 +17,14 @@
         "id": 101,
         "title": "",
         "description": "",
-        "speakers": [1],
+        "speakers": [0],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 2,
+    "id": 1,
     "name": "Juan Manuel Baiutti",
     "company": "Ingeniero, Project Manager",
     "photoUrl": "../../images/speakers/juanma.png",
@@ -42,14 +42,14 @@
         "id": 102,
         "title": "DevFest 2015 Keynote",
         "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
-        "speakers": [2],
+        "speakers": [1],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 3,
+    "id": 2,
     "name": "Jorge Cano",
     "company": "Full stack developer",
     "photoUrl": "../../images/speakers/jorge.png",
@@ -67,14 +67,14 @@
         "id": 103,
         "title": "Google full stack developer",
         "description": "No es una novedad ver en algunas ofertas de trabajo para desarrolladores y perfiles técnicos el requisito de ser un 'full-stack developer', pero ¿realmente conocemos qué están pidiendo al demandar ese perfil?<br>Gracias a Google y sus tecnologías JS veremos como iniciando con un servidor podemos abarcar todos los ámbitos dentro del desarrollo, devops backend middleware frontend y app.",
-        "speakers": [3],
+        "speakers": [2],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 4,
+    "id": 3,
     "name": "Gustavo Cardelle",
     "company": "Consultor IT",
     "photoUrl": "../../images/speakers/gustavo.png",
@@ -92,14 +92,14 @@
         "id": 1031,
         "title": "DevFest 2015 Keynote",
         "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
-        "speakers": [4],
+        "speakers": [3],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 5,
+    "id": 4,
     "name": "Juan Irungaray",
     "company": "Emprendedor, desarrollador independiente",
     "photoUrl": "../../images/speakers/juan.jpg",
@@ -117,14 +117,14 @@
         "id": 104,
         "title": "Novedades en la Nube de Google",
         "description": "Repasaremos los nuevos productos liberados por Google para que los desarrolladores construyan sus aplicaciones aprovechando el poder de la nube de Google.",
-        "speakers": [5],
+        "speakers": [4],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 6,
+    "id": 5,
     "name": "Matias Punx",
     "company": "Frontend Developer Ninja",
     "photoUrl": "../../images/speakers/punx.jpg",
@@ -142,14 +142,14 @@
         "id": 105,
         "title": "Polymer Code Lab",
         "description": "En este Code Lab vamos a revisar el sitio del <a href='https://twitter.com/hashtag/DevFestBaires?src=hash'>#DevFestBaires</a> 2015 y aprender a armar nuestro primer Web Component.<br><strong>Si queres participar del taller es necesario contar con una laptop</strong>.",
-        "speakers": [6],
+        "speakers": [5],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 7,
+    "id": 6,
     "name": "Nicolas Bortolotti",
     "company": "Director de Relaciones para Desarrolladores Google",
     "photoUrl": "../../images/speakers/nick.jpg",
@@ -167,14 +167,14 @@
         "id": 106,
         "title": "Los 7 arquetipos de la tecnología moderna",
         "description": "Descripción: actualmente se analizan gran cantidad de modelos tecnológicos, esto vislumbra gran cantidad de desafíos para los grupos de desarrollo actuales. Esta presentación propone 7 ambientes prácticos tecnológicos. Movilidad nativa, movilidad web, ambiente de persistencia móvil, análisis de datos masivos, y el poder de la nube actual.<br><br>Tech:<br>- Polymer [live demo]<br>- Android and Material Design [live demo]<br>- Android and Monetización Native Ads [live demo]<br>- Firebase [live demo]<br>- Cloud Platform,  GCE [live demo]<br>- Social Analysis and G+ [live demo]<br>- BigQuery  [live demo]",
-        "speakers": [7],
+        "speakers": [6],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 8,
+    "id": 7,
     "name": "Mariano Molina",
     "company": "Partner Business Solutions - Google Argentina",
     "photoUrl": "../../images/speakers/marianom.png",
@@ -192,14 +192,14 @@
         "id": 107,
         "title": "Monetizando Apps",
         "description": "A lo largo de la charla vamos a discutir los aspectos externos al desarrollo de una App que hacen al éxito de ésta como negocio.",
-        "speakers": [8],
+        "speakers": [7],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 9,
+    "id": 8,
     "name": "Maria Evangelina Ferreira",
     "company": "Docente Diseño Web - Universidad Tecnológica Nacional",
     "photoUrl": "../../images/speakers/evan.jpeg",
@@ -217,14 +217,14 @@
         "id": 108,
         "title": "Newton y CSS",
         "description": "Las animaciones realistas tienen una pizca de física. En esta charla vamos a hablar un poco de Newton y mucho de timing-functions!",
-        "speakers": [9],
+        "speakers": [8],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 10,
+    "id": 9,
     "name": "Lourdes Montano",
     "company": "Frontend developer",
     "photoUrl": "../../images/speakers/lourdes.jpg",
@@ -242,14 +242,14 @@
         "id": 109,
         "title": "Sass Maps",
         "description": "Al trabajar en proyectos grandes la arquitectura del código es muy importante para mantener todo bajo control. CSS no es la excepción.<br>A la hora de empezar a trabajar con nuestros archivos CSS, es escencial contar con una estructura que nos sirva a lo largo de todo el sitio. Esta charla es acerca del proceso de aprendizaje que tuve utilizando Sass Maps, una herramienta muy útil que me ayudó a organizar mi código y estructura para facilitar su mantenimiento.<br><br>Outline:<br>- Breve introducción a Sass Maps<br>- Diferentes usos de Maps<br>- Cómo crear estilos dinámicos<br>- Aplicación a grandes proyectos y equipos de trabajo",
-        "speakers": [10],
+        "speakers": [9],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 11,
+    "id": 10,
     "name": "Celina Twardowski",
     "company": "Frontend Developer",
     "photoUrl": "../../images/speakers/celina.jpg",
@@ -267,14 +267,14 @@
         "id": 110,
         "title": "Lo que el Flash nos dejó",
         "description": "Flash una vez fue nuestra mejor herramienta para jugar con gráficos y movimiento en la web, hasta que a Steve Jobs se le ocurrió que teniamos que empezar de nuevo",
-        "speakers": [11],
+        "speakers": [10],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 12,
+    "id": 11,
     "name": "Laura Morinigo",
     "company": "Software Developer",
     "photoUrl": "../../images/speakers/lauram.png",
@@ -292,14 +292,14 @@
         "id": 111,
         "title": "Responsive Web Design o Diseño Web Adaptable",
         "description": "<br>- Conceptos Básicos<br>- Buenas Practicas<br>- Algunas tecnologías (CSS, jQuery, html5)<br>- Lo que viene (Diseño smartwatch, Mobile)",
-        "speakers": [12],
+        "speakers": [11],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 13,
+    "id": 12,
     "name": "Matias Molina",
     "company": "Google Developer Expert",
     "photoUrl": "../../images/speakers/molina.jpg",
@@ -314,14 +314,14 @@
         "id": 112,
         "title": "Android Wear y Google Fit, el combo perfecto para Apps de Fitness",
         "description": "",
-        "speakers": [13],
+        "speakers": [12],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 14,
+    "id": 13,
     "name": "Francisco Solsona",
     "company": "Developer Platform NoLA Lead, Google - Mexico",
     "photoUrl": "../../images/speakers/paco.png",
@@ -336,14 +336,14 @@
         "id": 113,
         "title": "",
         "description": "",
-        "speakers": [14],
+        "speakers": [13],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 15,
+    "id": 14,
     "name": "Melanie Sclar",
     "company": "Algorithms and Mathematics Problem Solver - UBA",
     "photoUrl": "../../images/speakers/melanie.jpg",
@@ -361,14 +361,14 @@
         "id": 114,
         "title": "Las competencias de programación: resolver problemas también es un deporte",
         "description": "Las competencias de programación son certámenes donde se pone a prueba la capacidad de resolver problemas utilizando algoritmos conocidos combinándolos con la creatividad propia de aplicarlos a cada problema planteado, así como la capacidad de programarlos en el menor tiempo posible.<br>Tanto en sus versiones por equipos e individuales, estas competencias están en constante crecimiento hace varios años y las habilidades que entrenan son muy requeridas. Varias empresas ya tienen sus propias competencias, entre las que se destacan la <strong>Google Codejam</strong> y la Facebook HackerCup, que se suman a la competencia más prestigiosa del área: la ICPC (International Collegiate Programming Contest), organizada por la ACM (Association of Computing Machinery).<br>Por su naturaleza competitiva, estos certámenes tienen varias particularidades que los diferencian de los demás ámbitos de la programación, y hacen que requieran un entrenamiento específico. En esta charla ahondaremos en este fascinante mundo de las competencias de programación, y cómo llegamos a ser campeones lationamericanos en la última edición de la ACM-ICPC.",
-        "speakers": [15],
+        "speakers": [14],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 16,
+    "id": 15,
     "name": "Erica Andrea Ruiz Tabarez",
     "company": "Programador - Desarrollador",
     "photoUrl": "../../images/speakers/erica.png",
@@ -383,14 +383,14 @@
         "id": 115,
         "title": "Mejoramiento en los procesos de documentación en aplicaciones web y móviles",
         "description": "A medida que el negocio de las aplicaciones móviles se va expandiendo y a la par de esa expansión también crece el número de desarrolladores; las empresas encargadas de vender, distribuir o producir éstas aplicaciones se enfrentan a la deficiencia  en la documentación y estandarización en los desarrollos Web; tener claro durante la fase de análisis,  desarrollo y programación la documentación, estándar o norma requerida, es de vital importancia para la escalabilidad y compactibilidad de los  desarrollos web, móviles; las instituciones  universitarias, y todos los agentes involucrados en el proceso de generadores de nuevos desarrolladores cumplen un rol importante y son pieza fundamental para una web que avanza.",
-        "speakers": [16],
+        "speakers": [15],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 17,
+    "id": 16,
     "name": "Sabina Schneider",
     "company": "Ingeniero en sistemas",
     "photoUrl": "../../images/speakers/sabina.png",
@@ -405,14 +405,14 @@
         "id": 116,
         "title": "Monetizacion y tendencias de mercado sobre Big Data",
         "description": "El mundo ha cambiado y uno de los nuevos desafíos es obtener información en grandes volúmenes de datos, volumen que proviene de las redes sociales, el amplio uso de los dispositivos móviles, además de un fenómeno que está teniendo más presencia en el mercado: IoT. Solo aquellas compañías que invierten en el análisis de información y en un mayor y mejor conocimiento de su público aprovecharán realmente el valor de la información. Técnicamente hablando el ecosistema Big Data es enorme y las compañías están aprovechando sus ventajas para volverse flexibles y poder escalar.<br>Durante esta sesión hablaremos sobre el impacto de este fenómeno en la sociedad, cómo la afecta, ayuda y transforma a través de ejemplos como eCommerce. ",
-        "speakers": [17],
+        "speakers": [16],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 18,
+    "id": 17,
     "name": "Maria Zavala",
     "company": "QA Technical Director",
     "photoUrl": "../../images/speakers/zabala.png",
@@ -430,14 +430,14 @@
         "id": 117,
         "title": "Los nuevos desafíos del testing",
         "description": "La tecnología avanza rápidamente, los usuarios están cada vez más cerca de la tecnología que ya es parte de su vida, con lo cual tienen expectativas muy altas.<br>En este contexto la industria del desarrollo de Software tiene que adaptarse y en particular el aseguramiento de la calidad del producto final toma mayor relevancia. <br>Se puede seguir haciendo Testing de la misma manera en que se hacía años atrás? los plazos de entrega cambiaron, las plataformas cambian a diario, el volumen de información es cada vez mayor, los tiempos de respuesta de cualquier SW deben ser inmediatos. Entonces, sí es necesario cambiar la mirada, ampliar el acance, ajustar los procesos, usar nuevas técnicas y capacitarse en nuevas tecnologías.<br>El objetivo de la chara es analizar los nuevos desafíos y cómo el testing debe cambiar el enfoque para lograr la cobertura de pruebas necesarias. Entre otros temas se verá: Testing Tradicional vs Agile, Multi-plataforma, Mobile, CMSs, Multilenguaje, Big Data, etc.",
-        "speakers": [18],
+        "speakers": [17],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 19,
+    "id": 18,
     "name": "Isadora Valline",
     "company": "Visual Design Manager",
     "photoUrl": "../../images/speakers/isadora.jpg",
@@ -452,14 +452,14 @@
         "id": 118,
         "title": "El Diseño y su insercion en la tecnologia digital.",
         "description": "<br>- ¿Qué es un Diseñador? (perfil, características)<br> - ¿Cuál es su objetivo dentro de un proyecto de desarrollo de software? (mision, objetivos con respecto a su perfil y tareas).<br> - ¿Cómo alcanza ese objetivo? (practicas y metodologias aplicadas para lograr esos objetivos).<br> - Interacción con otros roles.<br>- Algunos Casos de exito.",
-        "speakers": [19],
+        "speakers": [18],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 20,
+    "id": 19,
     "name": "Valeria Viva",
     "company": "Director en Ser 2.0",
     "photoUrl": "../../images/speakers/valeria.jpg",
@@ -477,14 +477,14 @@
         "id": 119,
         "title": "10 tips de Project Management en el desarrollo web",
         "description": "Buenas prácticas, herramientas y tips para gestionar proyectos de desarrollo web eficientemente",
-        "speakers": [20],
+        "speakers": [19],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 21,
+    "id": 20,
     "name": "Lara Medialdea",
     "company": "Líder del Proyecto Programá tu Futuro",
     "photoUrl": "../../images/speakers/lara.jpg",
@@ -502,14 +502,14 @@
         "id": 120,
         "title": "Keynote Women Techmakers",
         "description": "Bienvenida al Google DevFest 2015, Buenos Aires e introducción a Woman Techmakers.",
-        "speakers": [21],
+        "speakers": [20],
         "language": "es",
         "track": "WTM",
         "presentation": "",
         "video": ""
     }]
 }, {
-    "id": 22,
+    "id": 21,
     "name": "Cristian Reynaga",
     "company": "Gerente de Sensorización Urbana",
     "photoUrl": "../../images/speakers/reynaga.jpg",
@@ -527,7 +527,7 @@
         "id": 121,
         "title": "Internet de las cosas: de la intuición al desarrollo.",
         "description": "El objetivo del encuentro es introducir a los asistentes a 'Internet de las Cosas', una conceptualización de los múltiples dispositivos 'inteligentes' que rápidamente están formando parte de nuestro entorno cotidiano. Luego se presentarán algunas herramientas y plataformas para comenzar a prototipar dispositivos y conectarlos en muy pocos pasos. Por último se compartirán proyectos de IoT que se están desarrollando en el Laboratorio de Gobierno del Ministerio de Modernización.",
-        "speakers": [22],
+        "speakers": [21],
         "language": "es",
         "track": "GDG",
         "presentation": "",

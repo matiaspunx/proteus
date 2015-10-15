@@ -175,7 +175,7 @@
             'neon-animation-finish': '_onNeonAnimationFinish'
         },
         peopleLoaded: function(event, response) {
-            this.people = this.randomOrder(response.response).slice(0, 25);
+            this.people = this.randomOrder(response.response).slice(0, 22);
 
             this.async(function() {
                 var nodeList = this.$.people.querySelectorAll('.card-wrapper');
