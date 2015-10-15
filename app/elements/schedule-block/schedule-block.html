@@ -105,17 +105,38 @@
                 background-color: var(--fucsia-claro);
                 color: #fff;
             }
-            .container-horarios {
-                    margin-right: 16px;
-                    margin-left: 16px;
-                }
+            
             .mb5 {
                 margin-bottom: 5px
             }
+
+            .event-actions {
+                font-size: 12px;
+                color: #999;
+                margin-top: 5px;
+                justify-content: flex-end;
+                 align-self: flex-end;
+            }
+            .event-end {
+                margin-right: 10px;
+            }
+            .addEvent {
+                cursor: pointer;
+            }
+            @media (min-width: 768px) and (max-width: 930px) {
+                .container-horarios {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+            }
             @media (max-width: 767px) {
                  .flex-3, .flex-6 {
-                padding: 0px;
-            }
+                    padding: 0px;
+                }
+                .container-horarios {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
             }
         </style>
         <iron-ajax auto url="[[source]]" handle-as="json" last-response="{{person}}"></iron-ajax>
@@ -148,16 +169,17 @@
 
         <!-- 13:30 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>13:30</span>
             </div>
         </div>
+
          <div class="container relative layout vertical-horizontal container-charlas">
             <div class="flex content-center">
                 <paper-card class="track-gral">
                     <div class="paper-card-container">
                         <div class="card-content layout horizontal">
-                            Apertura de puertas, ingreso y registro.
+                            Apertura de puertas. Ingreso y acreditación.
                         </div>
                     </div>
                 </paper-card>
@@ -166,7 +188,7 @@
 
         <!-- 14:00 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>14:00</span>
             </div>
         </div>
@@ -191,7 +213,11 @@
                                     <span class="name self-start">{{person.3.name}}</span>
                                 </div>
                             </div>
-
+                            
+                            <div class="event-actions layout horizontal">
+                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>14:20</span></div>
+                                <div user="{{person.1.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.1.id}}" icon="event"></iron-icon> <span user="{{person.1.id}}">Agregar al calendario</span></div>
+                            </div>
                         </div>
                     </div>
                 </paper-card>
@@ -210,6 +236,11 @@
                                 </div>
                             </div>
 
+                            <div class="event-actions layout horizontal">
+                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>14:20</span></div>
+                                <div user="{{person.20.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.20.id}}" icon="event"></iron-icon> <span user="{{person.20.id}}">Agregar al calendario</span></div>
+                            </div>
+
                         </div>
                     </div>
                 </paper-card>
@@ -219,7 +250,7 @@
 
         <!-- 14:25 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>14:25</span>
             </div>
         </div>
@@ -294,7 +325,7 @@
 
         <!-- 15:10 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>15:10</span>
             </div>
         </div>
@@ -369,7 +400,7 @@
 
         <!-- 15:55 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>15:55</span>
             </div>
         </div>
@@ -443,7 +474,7 @@
 
         <!-- 16:35 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>16:35</span>
             </div>
         </div>
@@ -462,7 +493,7 @@
 
         <!-- 17:05 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>17:05</span>
             </div>
         </div>
@@ -537,7 +568,7 @@
 
         <!-- 17:50 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>17:50</span>
             </div>
         </div>
@@ -598,7 +629,7 @@
 
         <!-- 18:35 -->
         <div class="container relative layout vertical-horizontal container-horarios">
-            <div class="flex content-left">
+            <div class="flex content-center">
                 <iron-icon class="schedule-icon" icon="schedule"></iron-icon> <span>18:35</span>
             </div>
         </div>
@@ -620,7 +651,28 @@
     Polymer({
         is: 'schedule-block',
         properties: {
-            source: String
+            source: String,
+            person: Object
+        },
+        addEvent: function(event) {
+            event.stopPropagation();
+            // DEMO URL: 
+            // &text=Summary+of+the+event&dates=20151029T090000/20151029T110000&ctz=America/Argentina/Buenos_Aires&details=Description+of+the+eventExample+of+a+new+line%0A%0A%0A---%0APowered+by+AddThisEvent+Free&location=Location+of+the+event&pli=1&uid&sf=true&output=xml#eventpage_6
+            var id = event.target.user;
+            var evento;
+
+            var url = 'https://calendar.google.com/calendar/render?action=TEMPLATE';
+            var titulo = '&text='+this.person[id].charla[0].title+' @ GDG Devfest 2015';
+            var dates = '&dates='+this.person[id].charla[0].dates;
+            var ctz = '&ctz=America/Argentina/Buenos_Aires';
+            var details = '&details='+this.person[id].charla[0].description;
+            var location = '&location=Universidad de Palermo, Mario Bravo 1050, Buenos Aires';
+            var end = '&pli=1&uid&sf=true&output=xml#eventpage_6';
+            evento = url+titulo+dates+ctz+details+location+end;
+
+            window.open(evento, '_blank');
+            
+            //console.log(evento);
         }
         // personLoaded: function(event, response) {
         //     this.persona = this.person[1].charla[0].title;

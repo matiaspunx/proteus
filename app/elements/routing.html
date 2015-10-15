@@ -20,6 +20,7 @@
     page('/speakers', function() {
       trackPageview('/speakers');
       app.route = 'home';
+      app.scrollPageToSpeakers();
     });
 
     page('/schedule', function() {

@@ -89,7 +89,7 @@
                       <p class="dates bold">17 de octubre, Buenos Aires</p>
                       <p class="description">El evento mas grande sobre las tecnologías de Google organizado por la comunidad GDG! Todo sobre Android, Web y Cloud de la mano de los expertos</p>
                       <div class="links layout horizontal align-pb-block">
-                        <a href="https://eventioz.com.ar/e/devfest-buenos-aires-2015"><paper-button class="colorful" raised>Registrate</paper-button></a> <a href="/schedule" on-tap="scrollPageToSchedule"><paper-button class="cyan" raised>Agenda</paper-button></a>
+                        <a href="https://eventioz.com.ar/e/devfest-buenos-aires-2015"><paper-button class="colorful" raised><iron-icon class="btn-icon" icon="add-box"></iron-icon> Registrate</paper-button></a> <a data-route="schedule" href="#!/schedule"><paper-button class="cyan" raised><iron-icon class="btn-icon" icon="event"></iron-icon> Agenda</paper-button></a>
                       </div>
                     </div>
                   </div>
@@ -99,10 +99,10 @@
               <statistics-block></statistics-block>
 
               <div id="scrollPersonas"></div>
-              <featured-people source="../../data/featured-speakers.json"></featured-people>
+              <featured-people source="../../data/speakers-sessions.json"></featured-people>
 
               <div id="scrollSchedule"></div>
-              <schedule-block source="../../data/featured-speakers.json"></schedule-block>
+              <schedule-block source="../../data/speakers-sessions.json"></schedule-block>
 
               <photo-block></photo-block>
 
@@ -128,7 +128,6 @@
                  duration="6000"
                  text="Caching complete! This app will work offline.">
     </paper-toast>
-
     <platinum-sw-register auto-register
                           clients-claim
                           skip-waiting
@@ -140,7 +139,9 @@
     
     <webfont-loader families="Roboto:100,400&subset=latin"></webfont-loader>
   </template>
+
   <google-analytics code="UA-68618828-1"></google-analytics>
+
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->

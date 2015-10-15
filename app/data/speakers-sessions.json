@@ -21,7 +21,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T175000/20151017T183000"
     }]
 }, {
     "id": 1,
@@ -40,13 +41,14 @@
     }],
     "charla": [{
         "id": 102,
-        "title": "DevFest 2015 Keynote",
+        "title": "Keynote DevFest 2015",
         "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
         "speakers": [1],
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T140000/20151017T142000"
     }]
 }, {
     "id": 2,
@@ -90,7 +92,7 @@
     }],
     "charla": [{
         "id": 1031,
-        "title": "DevFest 2015 Keynote",
+        "title": "Keynote GDG DevFest 2015",
         "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
         "speakers": [3],
         "language": "es",
@@ -334,8 +336,8 @@
     }],
     "charla": [{
         "id": 113,
-        "title": "",
-        "description": "",
+        "title": "Construyendo apps para los siguientes mil millones ",
+        "description": "Conoce los mercados emergentes y cómo son los nuevos usuarios de apps. Haremos un recorrido por las 10 mejores prácticas para que tu app sea un éxito y llegue no sólo los siguientes mil millones, sino también a los existentes",
         "speakers": [13],
         "language": "es",
         "track": "GDG",
