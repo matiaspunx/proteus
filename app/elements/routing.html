@@ -22,6 +22,12 @@
       app.route = 'home';
     });
 
+    page('/schedule', function() {
+      trackPageview('/schedule');
+      app.route = 'home';
+      app.scrollPageToSchedule();
+    });
+
     page('/speakers/:id', function(data) {
       trackPageview('/speakers/' + data.params.id);
       app.route = 'home';

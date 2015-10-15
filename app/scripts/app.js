@@ -58,6 +58,11 @@
       app.smoothScroll(item, 1000);
     };
 
+    app.scrollPageToSchedule = function() {
+      var item = document.getElementById('scrollSchedule');
+      app.smoothScroll(item, 1000);
+    };
+
     app.generateClass = function(value) {
         return value.replace(/\s+/g, '-').toLowerCase();
     };

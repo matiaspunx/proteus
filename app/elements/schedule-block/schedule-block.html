@@ -4,7 +4,7 @@
             :host {
                 display: block;
                 color: var(--social-font-color);
-                margin-top: 60px;
+                /*margin-top: 60px;*/
                 margin-bottom: 80px;
             }
             .container-tit-full {
@@ -46,6 +46,7 @@
             }
             paper-card {
                 min-width: 100%;
+                background-color: #f9f9f9
             }
             .flex-3, .flex-6 {
                 padding: 0 5px;
@@ -89,12 +90,12 @@
             }
             .sala {
                 position: absolute;
-                top: -10px;
+                top: -11px;
                 right: 5px;
                 background: red;
                 padding: 3px;
                 border-radius: 3px;
-                font-size: 10px;
+                font-size: 11px;
             }
             .track-gdg .sala {
                 background-color: var(--dark-primary-color);
@@ -117,13 +118,13 @@
             }
             }
         </style>
-        <iron-ajax auto url="[[source]]" handle-as="json" on-response="personLoaded" last-response="{{person}}"></iron-ajax>
+        <iron-ajax auto url="[[source]]" handle-as="json" last-response="{{person}}"></iron-ajax>
 
 
         <div class="container container-tit-full">
             <div class="container relative layout horizontal container-tit">
                 <div class="flex content-center text-center">
-                    <h4 class="heading">Schedule</h4>
+                    <h4 class="heading">Agenda</h4>
                 </div>
             </div>
         </div>
@@ -620,14 +621,14 @@
         is: 'schedule-block',
         properties: {
             source: String
-        },
-        personLoaded: function(event, response) {
-            this.persona = this.person[1].charla[0].title;
-            console.log(this.persona);
-        }, 
-        openSpeaker: function(event) {
-            console.log(event.target.id);
-            //page.redirect('/speakers/' + event.target.id);
         }
+        // personLoaded: function(event, response) {
+        //     this.persona = this.person[1].charla[0].title;
+        //     console.log(this.persona);
+        // }, 
+        // openSpeaker: function(event) {
+        //     console.log(event.target.id);
+        //     //page.redirect('/speakers/' + event.target.id);
+        // }
     });
 </script>
