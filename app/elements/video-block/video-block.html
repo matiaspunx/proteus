@@ -1,0 +1,53 @@
+<dom-module id="video-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                background-color: var(--default-primary-color);
+                background-image: url(../../images/bg_pattern1.png), url(../../images/bg_pattern.png);
+                background-origin: padding-box, padding-box;
+                background-size: 680px 355px, 562px 350px;
+                background-position: 50%;
+                --social-font-color: #ffffff;
+                color: var(--social-font-color);
+                margin-top: 60px;
+            }
+
+            a {
+                color: var(--social-font-color);
+            }
+
+            .content-center {
+                text-align: center;
+            }
+
+            .heading a {
+                font-weight: 100;
+                color: var(--light-primary-color);
+            }
+
+            @media (max-width: 768px) {
+                .container .heading {
+                    font-size: 16px;
+                }
+                .container span.block {
+                    font-size: 14px;
+                }
+            }
+        </style>
+
+        
+
+        <div class="container relative layout vertical-horizontal">
+            <div class="flex content-center">
+               <a href="http://devfestlive.escueladevrock.com"><paper-button class="streaming" raised>¡Mirá el #DevFestBairs en vivo!</paper-button></a>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'video-block'
+    });
+</script>

@@ -73,7 +73,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T155500/20151017T163500"
     }]
 }, {
     "id": 3,
@@ -123,7 +124,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T170500/20151017T174500"
     }]
 }, {
     "id": 5,
@@ -148,7 +150,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T151000/20151017T155000"
     }]
 }, {
     "id": 6,
@@ -173,7 +176,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T142500/20151017T150500"
     }]
 }, {
     "id": 7,
@@ -198,7 +202,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T155500/20151017T163500"
     }]
 }, {
     "id": 8,
@@ -223,7 +228,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T155500/20151017T163500"
     }]
 }, {
     "id": 9,
@@ -248,7 +254,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T142500/20151017T150500"
     }]
 }, {
     "id": 10,
@@ -273,7 +280,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T175000/20151017T183000"
     }]
 }, {
     "id": 11,
@@ -298,11 +306,12 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T175000/20151017T183000"
     }]
 }, {
     "id": 12,
-    "name": "Matias Molina",
+    "name": "Matias Molinas",
     "company": "Google Developer Expert",
     "photoUrl": "../../images/speakers/molina.jpg",
     "bio": "Matias estudio Bioingeniería, y tiene mas de 15 años de experiencia como desarrollador de software. Se desempeñó como desarrollador, I+D, Arquitecto y CTO. Es organizador del Santa Fe GTUG y es Google Developer Expert para las APIs de YouTube.",
@@ -320,7 +329,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T151000/20151017T155000"
     }]
 }, {
     "id": 13,
@@ -342,7 +352,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T170500/20151017T174500"
     }]
 }, {
     "id": 14,
@@ -367,7 +378,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T170500/20151017T174500"
     }]
 }, {
     "id": 15,
@@ -389,7 +401,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T170500/20151017T174500"
     }]
 }, {
     "id": 16,
@@ -411,7 +424,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T155500/20151017T163500"
     }]
 }, {
     "id": 17,
@@ -436,7 +450,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T151000/20151017T155000"
     }]
 }, {
     "id": 18,
@@ -458,7 +473,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T151000/20151017T155000"
     }]
 }, {
     "id": 19,
@@ -483,7 +499,8 @@
         "language": "es",
         "track": "WTM",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T142500/20151017T150500"
     }]
 }, {
     "id": 20,
@@ -533,6 +550,33 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T175000/20151017T183000"
+    }]
+}, {
+    "id": 22,
+    "name": "Enrique Diaz",
+    "company": "GDE: Android",
+    "photoUrl": "../../images/speakers/enrique.jpg",
+    "bio": "Enrique es un hacker apasionado que empezó a programar a los 7 años, y se convirtió en desarrollador profesional a los 20 años.<br>En 2009 empezó a desarrollar en Android SDK y un año después creó AndroidTitlan, la comunidad más activa de programadores Android en español sirviendo más de 4000 participantes hasta la fecha. ",
+    "tags": ["GDE", "Android"],
+    "height": "position: relative; min-height: 900px",
+    "socials": [{
+        "name": "app-icons:glus",
+        "link": "https://plus.google.com/+EnriqueDiaz/posts"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://twitter.com/"
+    }],
+    "charla": [{
+        "id": 122,
+        "title": "",
+        "description": "",
+        "speakers": [22],
+        "language": "es",
+        "track": "GDG",
+        "presentation": "",
+        "video": "",
+        "dates": "20151017T142500/20151017T150500"
     }]
 }]
