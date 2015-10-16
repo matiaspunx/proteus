@@ -99,7 +99,8 @@
         "language": "es",
         "track": "GDG",
         "presentation": "",
-        "video": ""
+        "video": "",
+        "dates": "20151017T140000/20151017T142000"
     }]
 }, {
     "id": 4,
@@ -118,14 +119,14 @@
     }],
     "charla": [{
         "id": 104,
-        "title": "Novedades en la Nube de Google",
-        "description": "Repasaremos los nuevos productos liberados por Google para que los desarrolladores construyan sus aplicaciones aprovechando el poder de la nube de Google.",
+        "title": "Keynote GDG DevFest 2015",
+        "description": "Bienvenida al Google DevFest 2015, Buenos aires.",
         "speakers": [4],
         "language": "es",
         "track": "GDG",
         "presentation": "",
         "video": "",
-        "dates": "20151017T170500/20151017T174500"
+        "dates": "20151017T140000/20151017T142000"
     }]
 }, {
     "id": 5,
@@ -151,7 +152,7 @@
         "track": "GDG",
         "presentation": "",
         "video": "",
-        "dates": "20151017T151000/20151017T155000"
+        "dates": "20151017T170500/20151017T174500"
     }]
 }, {
     "id": 6,
@@ -288,7 +289,7 @@
     "name": "Laura Morinigo",
     "company": "Software Developer",
     "photoUrl": "../../images/speakers/lauram.png",
-    "bio": "",
+    "bio": "Estudiante de Ingeniera en Sistemas UTN. Actualmente me desarrollo como software developer en seguridad informatica, AFIP. Trabaja como desarrolladora desde hace 8 años en diferentes tecnologías ya sea frontend o backend.",
     "tags": ["HTML", "Oracle Forms", "JavaScript", "AJAX"],
     "height": "position: relative; min-height: 650px",
     "socials": [{
@@ -530,7 +531,7 @@
 }, {
     "id": 21,
     "name": "Cristian Reynaga",
-    "company": "Gerente de Sensorización Urbana",
+    "company": "Sensorización Urbana - Laboratorio de Gobierno",
     "photoUrl": "../../images/speakers/reynaga.jpg",
     "bio": "Desarrollador en interactividad. Coordino los proyectos de Internet de las Cosas y sensores del Laboratorio de Gobierno del Ministerio de Modernización.",
     "tags": ["IOT", "Arduino", "Sensores"],
@@ -558,7 +559,7 @@
     "name": "Enrique Diaz",
     "company": "GDE: Android",
     "photoUrl": "../../images/speakers/enrique.jpg",
-    "bio": "Enrique es un hacker apasionado que empezó a programar a los 7 años, y se convirtió en desarrollador profesional a los 20 años.<br>En 2009 empezó a desarrollar en Android SDK y un año después creó AndroidTitlan, la comunidad más activa de programadores Android en español sirviendo más de 4000 participantes hasta la fecha. ",
+    "bio": "Enrique es un hacker apasionado que empezó a programar a los 7 años, y se convirtió en desarrollador profesional a los 20 años.\nEn 2009 empezó a desarrollar en Android SDK y un año después creó AndroidTitlan, la comunidad más activa de programadores Android en español sirviendo más de 4000 participantes hasta la fecha. ",
     "tags": ["GDE", "Android"],
     "height": "position: relative; min-height: 900px",
     "socials": [{
@@ -566,11 +567,11 @@
         "link": "https://plus.google.com/+EnriqueDiaz/posts"
     },{
         "name": "app-icons:linkedin",
-        "link": "https://twitter.com/"
+        "link": "https://www.linkedin.com/in/nrike"
     }],
     "charla": [{
         "id": 122,
-        "title": "",
+        "title": "Introducción a Material Design en Android SDK",
         "description": "",
         "speakers": [22],
         "language": "es",
@@ -578,5 +579,31 @@
         "presentation": "",
         "video": "",
         "dates": "20151017T142500/20151017T150500"
+    }]
+}, {
+    "id": 23,
+    "name": "Melissa Powel",
+    "company": "Global Program Manager",
+    "photoUrl": "../../images/speakers/melissa.png",
+    "bio": "Melissa Powel es una Google Sprint Master certificada y manager del programa global responsable de actividades de diseño en el programa de expertos de Google, una comunidad externa con más de 300 expertos por todo el mundo. Ella estableció el 'Design Sprint' como el componente principal del programa ya que cree que esta metodología tiene el poder de resolver los problemas mas desafiantes del mundo.",
+    "tags": ["GDE", "UX/UI"],
+    "height": "position: relative; min-height: 900px",
+    "socials": [{
+        "name": "app-icons:twitter",
+        "link": "https://twitter.com/Mpowel85"
+    },{
+        "name": "app-icons:linkedin",
+        "link": "https://www.linkedin.com/pub/melissa-powel/4/797/357"
+    }],
+    "charla": [{
+        "id": 123,
+        "title": "Design Sprints en Google",
+        "description": "El design sprint es una herramienta realmente poderosa que incorpora el feedback del usuario, la ideación en tiempos acotados y validación rápida de conceptos que está cambiando la forma en la que muchos equipos en distintas empresas, incluyendo Google, encaran el diseño de sus productos.",
+        "speakers": [23],
+        "language": "es",
+        "track": "GDG",
+        "presentation": "",
+        "video": "",
+        "dates": "20151017T151000/20151017T155000"
     }]
 }]

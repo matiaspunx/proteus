@@ -15,9 +15,7 @@
                 background-position: 50%;
                 max-width: 100%;
                 padding: 0;
-            }
-            .container-horarios {
-                padding: 0; 
+                margin-bottom: 20px;
             }
             .container .heading {
                 margin-bottom: 0;
@@ -30,8 +28,11 @@
                 text-align: center;
             }
             .container-horarios {
-                margin-top: 30px;
                 margin-bottom: 10px;
+                padding-top:20px;
+                padding-bottom:20px
+            }
+            .container-horarios .content-center {
                 border-bottom: 1px solid  var(--light-primary-color);
                 padding-bottom: 5px;
             }
@@ -143,12 +144,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
             .addEvent {
                 cursor: pointer;
             }
-            @media (min-width: 1200px) {
-                .container-horarios {
-                    margin-right: 16px;
-                    margin-left: 16px;
-                }
-            }
+
             @media (max-width: 767px) {
 
                 paper-card {
@@ -220,9 +216,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                     <span class="name self-start">{{person.3.name}}</span>
                                 </div>
                             </div>
+
+                            <div class="speaker layout horizontal mb5">
+                                <iron-image src="{{person.4.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <div class="person-detail flex layout vertical center-center">
+                                    <span class="name self-start">{{person.4.name}}</span>
+                                </div>
+                            </div>
                             
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>14:20</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>14:20</span></div>
                                 <div user="{{person.1.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.1.id}}" icon="event"></iron-icon> <span user="{{person.1.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -244,7 +247,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                             </div>
 
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>14:20</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>14:20</span></div>
                                 <div user="{{person.20.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.20.id}}" icon="event"></iron-icon> <span user="{{person.20.id}}">Agregar al calendario</span></div>
                             </div>
 
@@ -276,7 +279,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                             </div>
 
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:05</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:05</span></div>
                                 <div user="{{person.6.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.6.id}}" icon="event"></iron-icon> <span user="{{person.6.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -296,7 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:05</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:05</span></div>
                                 <div user="{{person.19.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.19.id}}" icon="event"></iron-icon> <span user="{{person.19.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -316,7 +319,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:05</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:05</span></div>
                                 <div user="{{person.9.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.9.id}}" icon="event"></iron-icon> <span user="{{person.9.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -337,7 +340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:05</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:05</span></div>
                                 <div user="{{person.22.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.22.id}}" icon="event"></iron-icon> <span user="{{person.22.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -367,7 +370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:50</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:50</span></div>
                                 <div user="{{person.12.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.12.id}}" icon="event"></iron-icon> <span user="{{person.12.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -387,7 +390,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:50</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:50</span></div>
                                 <div user="{{person.17.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.17.id}}" icon="event"></iron-icon> <span user="{{person.17.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -399,16 +402,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                 <div class="sala">Sala 3</div>
                     <div class="paper-card-container">
                         <div class="card-content layout vertical">
-                            <h4 class="charla-title">{{person.5.charla.0.title}}</h4>
+                            <h4 class="charla-title">{{person.23.charla.0.title}}</h4>
                             <div class="speaker layout horizontal">
-                                <iron-image src="{{person.5.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <iron-image src="{{person.23.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
                                 <div class="person-detail flex layout vertical center-center">
-                                    <span class="name self-start">{{person.5.name}}</span>
+                                    <span class="name self-start">{{person.23.name}}</span>
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:50</span></div>
-                                <div user="{{person.5.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.5.id}}" icon="event"></iron-icon> <span user="{{person.5.id}}">Agregar al calendario</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:50</span></div>
+                                <div user="{{person.23.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.23.id}}" icon="event"></iron-icon> <span user="{{person.23.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
                     </div>
@@ -428,7 +431,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:50</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:50</span></div>
                                 <div user="{{person.18.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.18.id}}" icon="event"></iron-icon> <span user="{{person.18.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -458,7 +461,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>16:35</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>16:35</span></div>
                                 <div user="{{person.2.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.2.id}}" icon="event"></iron-icon> <span user="{{person.2.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -470,16 +473,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                 <div class="sala">Sala 2</div>
                     <div class="paper-card-container">
                         <div class="card-content layout vertical">
-                            <h4 class="charla-title">{{person.16.charla.0.title}}</h4>
+                            <h4 class="charla-title">{{person.15.charla.0.title}}</h4>
                             <div class="speaker layout horizontal">
-                                <iron-image src="{{person.16.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <iron-image src="{{person.15.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
                                 <div class="person-detail flex layout vertical center-center">
-                                    <span class="name self-start">{{person.16.name}}</span>
+                                    <span class="name self-start">{{person.15.name}}</span>
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>16:35</span></div>
-                                <div user="{{person.16.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.16.id}}" icon="event"></iron-icon> <span user="{{person.16.id}}">Agregar al calendario</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>17:45</span></div>
+                                <div user="{{person.15.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.15.id}}" icon="event"></iron-icon> <span user="{{person.15.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
                     </div>
@@ -498,7 +501,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>16:35</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>16:35</span></div>
                                 <div user="{{person.8.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.8.id}}" icon="event"></iron-icon> <span user="{{person.8.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -519,7 +522,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>16:35</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>16:35</span></div>
                                 <div user="{{person.7.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.7.id}}" icon="event"></iron-icon> <span user="{{person.7.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -567,7 +570,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>17:45</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>17:45</span></div>
                                 <div user="{{person.13.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.13.id}}" icon="event"></iron-icon> <span user="{{person.13.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -579,16 +582,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                 <div class="sala">Sala 2</div>
                     <div class="paper-card-container">
                         <div class="card-content layout vertical">
-                            <h4 class="charla-title">{{person.15.charla.0.title}}</h4>
+                            <h4 class="charla-title">{{person.16.charla.0.title}}</h4>
                             <div class="speaker layout horizontal">
-                                <iron-image src="{{person.15.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <iron-image src="{{person.16.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
                                 <div class="person-detail flex layout vertical center-center">
-                                    <span class="name self-start">{{person.15.name}}</span>
+                                    <span class="name self-start">{{person.16.name}}</span>
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>17:45</span></div>
-                                <div user="{{person.15.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.15.id}}" icon="event"></iron-icon> <span user="{{person.15.id}}">Agregar al calendario</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>16:35</span></div>
+                                <div user="{{person.16.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.16.id}}" icon="event"></iron-icon> <span user="{{person.16.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
                     </div>
@@ -599,16 +602,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                 <div class="sala">Sala 3</div>
                     <div class="paper-card-container">
                         <div class="card-content layout vertical">
-                            <h4 class="charla-title">{{person.4.charla.0.title}}</h4>
+                            <h4 class="charla-title">{{person.5.charla.0.title}}</h4>
                             <div class="speaker layout horizontal">
-                                <iron-image src="{{person.4.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                                <iron-image src="{{person.5.photoUrl}}" class="person-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
                                 <div class="person-detail flex layout vertical center-center">
-                                    <span class="name self-start">{{person.4.name}}</span>
+                                    <span class="name self-start">{{person.5.name}}</span>
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>17:45</span></div>
-                                <div user="{{person.4.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.4.id}}" icon="event"></iron-icon> <span user="{{person.4.id}}">Agregar al calendario</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>17:45</span></div>
+                                <div user="{{person.5.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.5.id}}" icon="event"></iron-icon> <span user="{{person.5.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
                     </div>
@@ -628,7 +631,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>17:45</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>17:45</span></div>
                                 <div user="{{person.14.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.14.id}}" icon="event"></iron-icon> <span user="{{person.14.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -658,7 +661,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>18:30</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>18:30</span></div>
                                 <div user="{{person.0.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.0.id}}" icon="event"></iron-icon> <span user="{{person.0.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -678,7 +681,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>18:30</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>18:30</span></div>
                                 <div user="{{person.11.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.11.id}}" icon="event"></iron-icon> <span user="{{person.11.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -698,7 +701,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>18:30</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>18:30</span></div>
                                 <div user="{{person.10.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.10.id}}" icon="event"></iron-icon> <span user="{{person.10.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
@@ -719,7 +722,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--light-p
                                 </div>
                             </div>
                             <div class="event-actions layout horizontal">
-                                <div class="event-end"><iron-icon icon="restore"></iron-icon> <span>15:05</span></div>
+                                <div class="event-end"><iron-icon icon="restore" title="Cierre de la charla"></iron-icon> <span>15:05</span></div>
                                 <div user="{{person.21.id}}" class="addEvent" on-tap="addEvent"><iron-icon user="{{person.21.id}}" icon="event"></iron-icon> <span user="{{person.21.id}}">Agregar al calendario</span></div>
                             </div>
                         </div>
